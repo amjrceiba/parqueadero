@@ -4,26 +4,30 @@ pipeline {
     label 'Slave_Mac'
   }
 
-  stages{
-    stage('Checkout/Build/Test') {
-
-        // Checkout files.
+  stages {
+    stage('Checkout') {
         checkout([
-            $class: 'GitSCM',
-            branches: [[name: 'main']],
-            doGenerateSubmoduleConfigurations: false,
-            extensions: [], submoduleCfg: [],
-            userRemoteConfigs: [[
-                name: 'github',
-                url: 'https://github.com/amjrceiba/parqueadero'
-            ]]
-        ])
+                    $class: 'GitSCM',
+                    branches: [[name: '*/main']],
+                    doGenerateSubmoduleConfigurations: false,
+                    extensions: [],
+                    gitTool: 'Default',
+                    submoduleCfg: [],
+                    userRemoteConfigs: [[
+                        credentialsId: 'GitHub_amjrceiba',
+                        url: 'https://github.com/amjrceiba/parqueadero'
+                    ]]
+                ])
 
-        // Build and Test
-        sh 'xcodebuild -scheme "parqueadero" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 11,OS=14.5" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
+        stage('Build') {
+            // Build and Test
+            sh 'xcodebuild -scheme "parqueadero" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 11,OS=14.5" -enableCodeCoverage YES | /usr/local/bin/xcpretty -r junit'
+        }
 
-        // Publish test restults.
-        step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
+        stage('Test') {
+            // Publish test restults.
+            step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
+        }
     }
   }
 }
