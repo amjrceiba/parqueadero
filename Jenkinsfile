@@ -45,25 +45,25 @@ pipeline {
     //   }
     // }
 
-    stage('Notify') {
-      steps {
-        post {
-          failure {
-            echo 'This will run only if failed'
-            mail (to: 'andres.jaramillo@ceiba.com.co', subject: "Failed Pipeline:${currentBuild.fullDisplayName}", body: "Something is wrong with ${env.BUILD_URL}")
-          }
-        }
-      }
-    }
+    // stage('Notify') {
+    //   steps {
+    //     post {
+    //       failure {
+    //         echo 'This will run only if failed'
+    //         mail (to: 'andres.jaramillo@ceiba.com.co', subject: "Failed Pipeline:${currentBuild.fullDisplayName}", body: "Something is wrong with ${env.BUILD_URL}")
+    //       }
+    //     }
+    //   }
+    // }
 
-    stage('Success') {
-      steps {
-        success {
-          echo 'This will run only if successful'
-          junit 'build/test-results/test/*.xml' //RUTA DE TUS ARCHIVOS .XML
-        }
-      }
-    }
+    // stage('Success') {
+    //   steps {
+    //     success {
+    //       echo 'This will run only if successful'
+    //       junit 'build/test-results/test/*.xml' //RUTA DE TUS ARCHIVOS .XML
+    //     }
+    //   }
+    // }
 
   }
 }
