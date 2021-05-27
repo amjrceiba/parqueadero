@@ -4,23 +4,23 @@ pipeline {
     label 'Slave_Mac'
   }
 
-  // stages {
-  //   stage('Checkout') {
-  //     steps {
-  //       checkout([
-  //                   $class: 'GitSCM',
-  //                   branches: [[name: '*/main']],
-  //                   doGenerateSubmoduleConfigurations: false,
-  //                   extensions: [],
-  //                   gitTool: 'Default',
-  //                   submoduleCfg: [],
-  //                   userRemoteConfigs: [[
-  //                       credentialsId: 'GitHub_amjrceiba',
-  //                       url: 'https://github.com/amjrceiba/parqueadero'
-  //                   ]]
-  //               ])
-  //     }
-  //   }
+  stages {
+    // stage('Checkout') {
+    //   steps {
+    //     checkout([
+    //                 $class: 'GitSCM',
+    //                 branches: [[name: '*/main']],
+    //                 doGenerateSubmoduleConfigurations: false,
+    //                 extensions: [],
+    //                 gitTool: 'Default',
+    //                 submoduleCfg: [],
+    //                 userRemoteConfigs: [[
+    //                     credentialsId: 'GitHub_amjrceiba',
+    //                     url: 'https://github.com/amjrceiba/parqueadero'
+    //                 ]]
+    //             ])
+    //   }
+    // }
 
     stage('Build') {
       // Build and Test
