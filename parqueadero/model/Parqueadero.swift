@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import domain
 import infraestructure
 
 class Parqueadero: ObservableObject {
