@@ -7,62 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C14988417383E6F3E001543 /* Pods_parqueadero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBAFF47A54EE547978770A7 /* Pods_parqueadero.framework */; };
+		CE333D8A26667C9200EFB20D /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE333D8826667C9200EFB20D /* domain.framework */; };
+		CE333D8B26667C9200EFB20D /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE333D8826667C9200EFB20D /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE333DF22666EB5300EFB20D /* infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE333DF12666EB5300EFB20D /* infraestructure.framework */; };
+		CE333DF32666EB5300EFB20D /* infraestructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE333DF12666EB5300EFB20D /* infraestructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE333DF72666ECAD00EFB20D /* AddVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333DF62666ECAD00EFB20D /* AddVehicleView.swift */; };
+		CE333E0E2667156200EFB20D /* ParkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E0D2667156200EFB20D /* ParkingViewModel.swift */; };
+		CE333E1526671BA700EFB20D /* RegistroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E1426671BA700EFB20D /* RegistroModel.swift */; };
+		CE333E1726671BB300EFB20D /* VehiculoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E1626671BB300EFB20D /* VehiculoModel.swift */; };
+		CE333E1A26671D2A00EFB20D /* RegistroTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E1926671D2A00EFB20D /* RegistroTranslator.swift */; };
+		CE333E1C26671D3C00EFB20D /* VehiculoTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E1B26671D3C00EFB20D /* VehiculoTranslator.swift */; };
+		CE333E1E2667212100EFB20D /* AddVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E1D2667212100EFB20D /* AddVehicleViewModel.swift */; };
+		CE333E202667343700EFB20D /* RegistroItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E1F2667343700EFB20D /* RegistroItemView.swift */; };
+		CE333E222667358800EFB20D /* DateToStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E212667358800EFB20D /* DateToStringExtension.swift */; };
+		CE333E2A26674E3A00EFB20D /* Parqueadero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E2926674E3A00EFB20D /* Parqueadero.swift */; };
+		CE333E2E2667557D00EFB20D /* RegistroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E2D2667557C00EFB20D /* RegistroViewModel.swift */; };
+		CE333E302667558F00EFB20D /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E2F2667558F00EFB20D /* RegistroView.swift */; };
+		CE333E3926678AF100EFB20D /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E3826678AF100EFB20D /* CustomStackView.swift */; };
+		CE92B38B2665A8E2000DCE7B /* parqueaderoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92B38A2665A8E2000DCE7B /* parqueaderoTests.swift */; };
 		CEE1E42C2665A70500892843 /* parqueaderoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1E42B2665A70500892843 /* parqueaderoApp.swift */; };
-		CEE1E42E2665A70500892843 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1E42D2665A70500892843 /* ContentView.swift */; };
+		CEE1E42E2665A70500892843 /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1E42D2665A70500892843 /* ParkingView.swift */; };
 		CEE1E4302665A70700892843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE1E42F2665A70700892843 /* Assets.xcassets */; };
 		CEE1E4332665A70700892843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE1E4322665A70700892843 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE92B38D2665A8E2000DCE7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE1E4202665A70500892843 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE1E4272665A70500892843;
+			remoteInfo = parqueadero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE333D8E26667C9200EFB20D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE333D8B26667C9200EFB20D /* domain.framework in Embed Frameworks */,
+				CE333DF32666EB5300EFB20D /* infraestructure.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		68D161B711FF61E06608E83D /* Pods-parqueadero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parqueadero.debug.xcconfig"; path = "Target Support Files/Pods-parqueadero/Pods-parqueadero.debug.xcconfig"; sourceTree = "<group>"; };
-		6EEAD1FF3B7170C202F47C5E /* Pods-parqueadero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parqueadero.release.xcconfig"; path = "Target Support Files/Pods-parqueadero/Pods-parqueadero.release.xcconfig"; sourceTree = "<group>"; };
-		8FBAFF47A54EE547978770A7 /* Pods_parqueadero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parqueadero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE333D8826667C9200EFB20D /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE333DF12666EB5300EFB20D /* infraestructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = infraestructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE333DF62666ECAD00EFB20D /* AddVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleView.swift; sourceTree = "<group>"; };
+		CE333E0D2667156200EFB20D /* ParkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingViewModel.swift; sourceTree = "<group>"; };
+		CE333E1426671BA700EFB20D /* RegistroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroModel.swift; sourceTree = "<group>"; };
+		CE333E1626671BB300EFB20D /* VehiculoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculoModel.swift; sourceTree = "<group>"; };
+		CE333E1926671D2A00EFB20D /* RegistroTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroTranslator.swift; sourceTree = "<group>"; };
+		CE333E1B26671D3C00EFB20D /* VehiculoTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculoTranslator.swift; sourceTree = "<group>"; };
+		CE333E1D2667212100EFB20D /* AddVehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleViewModel.swift; sourceTree = "<group>"; };
+		CE333E1F2667343700EFB20D /* RegistroItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroItemView.swift; sourceTree = "<group>"; };
+		CE333E212667358800EFB20D /* DateToStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateToStringExtension.swift; sourceTree = "<group>"; };
+		CE333E2926674E3A00EFB20D /* Parqueadero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parqueadero.swift; sourceTree = "<group>"; };
+		CE333E2D2667557C00EFB20D /* RegistroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewModel.swift; sourceTree = "<group>"; };
+		CE333E2F2667558F00EFB20D /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
+		CE333E3826678AF100EFB20D /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		CE92B3882665A8E2000DCE7B /* parqueaderoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parqueaderoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE92B38A2665A8E2000DCE7B /* parqueaderoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueaderoTests.swift; sourceTree = "<group>"; };
+		CE92B38C2665A8E2000DCE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE1E4282665A70500892843 /* parqueadero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parqueadero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE1E42B2665A70500892843 /* parqueaderoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueaderoApp.swift; sourceTree = "<group>"; };
-		CEE1E42D2665A70500892843 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEE1E42D2665A70500892843 /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
 		CEE1E42F2665A70700892843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE1E4322665A70700892843 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEE1E4342665A70700892843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE92B3852665A8E2000DCE7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE1E4252665A70500892843 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C14988417383E6F3E001543 /* Pods_parqueadero.framework in Frameworks */,
+				CE333D8A26667C9200EFB20D /* domain.framework in Frameworks */,
+				CE333DF22666EB5300EFB20D /* infraestructure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84041D5F97CF753E386E7917 /* Pods */ = {
+		CE333D8726667C9200EFB20D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68D161B711FF61E06608E83D /* Pods-parqueadero.debug.xcconfig */,
-				6EEAD1FF3B7170C202F47C5E /* Pods-parqueadero.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		974A1BE79D6B3A5193A9B95B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8FBAFF47A54EE547978770A7 /* Pods_parqueadero.framework */,
+				CE333DF12666EB5300EFB20D /* infraestructure.framework */,
+				CE333D8826667C9200EFB20D /* domain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE333DFA2666F4E100EFB20D /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE333E0D2667156200EFB20D /* ParkingViewModel.swift */,
+				CE333E1D2667212100EFB20D /* AddVehicleViewModel.swift */,
+				CE333E2D2667557C00EFB20D /* RegistroViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		CE333DFB2666F4EC00EFB20D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CE333DFD2666F55200EFB20D /* listItems */,
+				CEE1E42D2665A70500892843 /* ParkingView.swift */,
+				CE333DF62666ECAD00EFB20D /* AddVehicleView.swift */,
+				CE333E2F2667558F00EFB20D /* RegistroView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CE333DFC2666F4F500EFB20D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEE1E42B2665A70500892843 /* parqueaderoApp.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		CE333DFD2666F55200EFB20D /* listItems */ = {
+			isa = PBXGroup;
+			children = (
+				CE333E1F2667343700EFB20D /* RegistroItemView.swift */,
+				CE333E3826678AF100EFB20D /* CustomStackView.swift */,
+			);
+			path = listItems;
+			sourceTree = "<group>";
+		};
+		CE333E1326671B9700EFB20D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CE333E1426671BA700EFB20D /* RegistroModel.swift */,
+				CE333E1626671BB300EFB20D /* VehiculoModel.swift */,
+				CE333E2926674E3A00EFB20D /* Parqueadero.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CE333E1826671D0600EFB20D /* anticorruption */ = {
+			isa = PBXGroup;
+			children = (
+				CE333E1926671D2A00EFB20D /* RegistroTranslator.swift */,
+				CE333E1B26671D3C00EFB20D /* VehiculoTranslator.swift */,
+			);
+			path = anticorruption;
+			sourceTree = "<group>";
+		};
+		CE92B3892665A8E2000DCE7B /* parqueaderoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE92B38A2665A8E2000DCE7B /* parqueaderoTests.swift */,
+				CE92B38C2665A8E2000DCE7B /* Info.plist */,
+			);
+			path = parqueaderoTests;
 			sourceTree = "<group>";
 		};
 		CEE1E41F2665A70500892843 = {
 			isa = PBXGroup;
 			children = (
 				CEE1E42A2665A70500892843 /* parqueadero */,
+				CE92B3892665A8E2000DCE7B /* parqueaderoTests */,
 				CEE1E4292665A70500892843 /* Products */,
-				84041D5F97CF753E386E7917 /* Pods */,
-				974A1BE79D6B3A5193A9B95B /* Frameworks */,
+				CE333D8726667C9200EFB20D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE1E4282665A70500892843 /* parqueadero.app */,
+				CE92B3882665A8E2000DCE7B /* parqueaderoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,11 +200,15 @@
 		CEE1E42A2665A70500892843 /* parqueadero */ = {
 			isa = PBXGroup;
 			children = (
-				CEE1E42B2665A70500892843 /* parqueaderoApp.swift */,
-				CEE1E42D2665A70500892843 /* ContentView.swift */,
-				CEE1E42F2665A70700892843 /* Assets.xcassets */,
 				CEE1E4342665A70700892843 /* Info.plist */,
+				CEE1E42F2665A70700892843 /* Assets.xcassets */,
+				CE333E1826671D0600EFB20D /* anticorruption */,
+				CE333DFC2666F4F500EFB20D /* controller */,
+				CE333E1326671B9700EFB20D /* model */,
 				CEE1E4312665A70700892843 /* Preview Content */,
+				CE333DFB2666F4EC00EFB20D /* view */,
+				CE333DFA2666F4E100EFB20D /* viewModel */,
+				CE333E212667358800EFB20D /* DateToStringExtension.swift */,
 			);
 			path = parqueadero;
 			sourceTree = "<group>";
@@ -97,14 +224,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE92B3872665A8E2000DCE7B /* parqueaderoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE92B3912665A8E2000DCE7B /* Build configuration list for PBXNativeTarget "parqueaderoTests" */;
+			buildPhases = (
+				CE92B3842665A8E2000DCE7B /* Sources */,
+				CE92B3852665A8E2000DCE7B /* Frameworks */,
+				CE92B3862665A8E2000DCE7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE92B38E2665A8E2000DCE7B /* PBXTargetDependency */,
+			);
+			name = parqueaderoTests;
+			productName = parqueaderoTests;
+			productReference = CE92B3882665A8E2000DCE7B /* parqueaderoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEE1E4272665A70500892843 /* parqueadero */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEE1E4372665A70700892843 /* Build configuration list for PBXNativeTarget "parqueadero" */;
 			buildPhases = (
-				80499E02567B81505B1156B3 /* [CP] Check Pods Manifest.lock */,
 				CEE1E4242665A70500892843 /* Sources */,
 				CEE1E4252665A70500892843 /* Frameworks */,
 				CEE1E4262665A70500892843 /* Resources */,
+				CE333D8E26667C9200EFB20D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,6 +269,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					CE92B3872665A8E2000DCE7B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CEE1E4272665A70500892843;
+					};
 					CEE1E4272665A70500892843 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -143,11 +292,19 @@
 			projectRoot = "";
 			targets = (
 				CEE1E4272665A70500892843 /* parqueadero */,
+				CE92B3872665A8E2000DCE7B /* parqueaderoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE92B3862665A8E2000DCE7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEE1E4262665A70500892843 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,44 +316,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		80499E02567B81505B1156B3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		CE92B3842665A8E2000DCE7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-parqueadero-checkManifestLockResult.txt",
+				CE92B38B2665A8E2000DCE7B /* parqueaderoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		CEE1E4242665A70500892843 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE1E42E2665A70500892843 /* ContentView.swift in Sources */,
+				CE333E3926678AF100EFB20D /* CustomStackView.swift in Sources */,
+				CE333E202667343700EFB20D /* RegistroItemView.swift in Sources */,
+				CE333E2A26674E3A00EFB20D /* Parqueadero.swift in Sources */,
+				CE333E1E2667212100EFB20D /* AddVehicleViewModel.swift in Sources */,
+				CE333E1526671BA700EFB20D /* RegistroModel.swift in Sources */,
+				CE333E2E2667557D00EFB20D /* RegistroViewModel.swift in Sources */,
+				CEE1E42E2665A70500892843 /* ParkingView.swift in Sources */,
+				CE333E1726671BB300EFB20D /* VehiculoModel.swift in Sources */,
+				CE333E0E2667156200EFB20D /* ParkingViewModel.swift in Sources */,
+				CE333E1C26671D3C00EFB20D /* VehiculoTranslator.swift in Sources */,
+				CE333E302667558F00EFB20D /* RegistroView.swift in Sources */,
+				CE333E222667358800EFB20D /* DateToStringExtension.swift in Sources */,
 				CEE1E42C2665A70500892843 /* parqueaderoApp.swift in Sources */,
+				CE333DF72666ECAD00EFB20D /* AddVehicleView.swift in Sources */,
+				CE333E1A26671D2A00EFB20D /* RegistroTranslator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CE92B38E2665A8E2000DCE7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE1E4272665A70500892843 /* parqueadero */;
+			targetProxy = CE92B38D2665A8E2000DCE7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CE92B38F2665A8E2000DCE7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8W2BLFM54;
+				INFOPLIST_FILE = parqueaderoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.parqueaderoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parqueadero.app/parqueadero";
+			};
+			name = Debug;
+		};
+		CE92B3902665A8E2000DCE7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8W2BLFM54;
+				INFOPLIST_FILE = parqueaderoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.parqueaderoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parqueadero.app/parqueadero";
+			};
+			name = Release;
+		};
 		CEE1E4352665A70700892843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,7 +516,6 @@
 		};
 		CEE1E4382665A70700892843 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68D161B711FF61E06608E83D /* Pods-parqueadero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,7 +524,7 @@
 				DEVELOPMENT_TEAM = Q8W2BLFM54;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = parqueadero/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +538,6 @@
 		};
 		CEE1E4392665A70700892843 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EEAD1FF3B7170C202F47C5E /* Pods-parqueadero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,7 +546,7 @@
 				DEVELOPMENT_TEAM = Q8W2BLFM54;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = parqueadero/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,6 +561,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE92B3912665A8E2000DCE7B /* Build configuration list for PBXNativeTarget "parqueaderoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE92B38F2665A8E2000DCE7B /* Debug */,
+				CE92B3902665A8E2000DCE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEE1E4232665A70500892843 /* Build configuration list for PBXProject "parqueadero" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
