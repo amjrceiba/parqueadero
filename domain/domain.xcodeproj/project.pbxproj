@@ -87,13 +87,6 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		CE333D9726667F2500EFB20D /* factory */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = factory;
-			sourceTree = "<group>";
-		};
 		CE333D9826667F2C00EFB20D /* service */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +109,6 @@
 				CE333DE126669DCF00EFB20D /* infraestructure.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE333DE72666D8D000EFB20D /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = protocols;
 			sourceTree = "<group>";
 		};
 		CE333DEE2666DC7700EFB20D /* enums */ = {
@@ -157,10 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				CE333DEE2666DC7700EFB20D /* enums */,
-				CE333DE72666D8D000EFB20D /* protocols */,
 				CE333D9926667F3700EFB20D /* repository */,
 				CE333D9826667F2C00EFB20D /* service */,
-				CE333D9726667F2500EFB20D /* factory */,
 				CE333D9626667F1E00EFB20D /* model */,
 				CE92B39F2665A9D5000DCE7B /* domain.h */,
 				CE92B3A02665A9D5000DCE7B /* Info.plist */,

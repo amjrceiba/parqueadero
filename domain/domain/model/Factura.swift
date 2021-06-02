@@ -19,6 +19,7 @@ public class Factura {
     }
     
     public func calcularTotal(){
+        self.fechaSalida = Date()
         self.total = TotalFactura(registro: self.registro, fechaSalida: fechaSalida).calcularTotal()
     }
     

@@ -15,5 +15,5 @@ public class Const {
     public static let adicional = 2000
     
     public static let limiteCarros = 2
-    public static let limiteMotos = 1
+    public static let limiteMotos = 10
 }

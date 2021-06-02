@@ -20,7 +20,7 @@ public class RegistroRepositoryRealm: RegistroRepository {
 
         let registros = obtenerRegistros()
         
-        if registro.getVehiculo().getTipo() == "carro"{
+        if registro.getVehiculo().getTipo() == "carro"{//Logica de negocio
             if registros.filter({$0.getVehiculo().getTipo() == "carro"}).count >= Const.limiteCarros {
                 throw ErroresRegistroRealm.errorCarros
             }
@@ -54,7 +54,7 @@ public class RegistroRepositoryRealm: RegistroRepository {
         
         var registros = [Registro]()
         
-        for entity in registrosEntities {
+        for entity in registrosEntities {//Traduccion
             let registro = RegistroTraslator().entityToDomain(registroEntity: entity)
             registros.append(registro)
         }

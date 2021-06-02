@@ -11,7 +11,7 @@ struct AddVehicleView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var parqueadero: Parqueadero = .shared
     @ObservedObject var addVehicleViewModel = AddVehicleViewModel()
-    @State private var matricula: String = ""
+    @ObservedObject private var matricula = TextLimiter(limit: 6)
     @State var selection: TipoVehiculo = .Carro
     @State var cilindraje: String = ""
     
@@ -19,7 +19,7 @@ struct AddVehicleView: View {
         
         Form{
             Section{
-                TextField("Matricula", text: $matricula)
+                TextField("Matricula", text: $matricula.value)
                     .keyboardType(.asciiCapable)
                 
                 Picker("Tipo de vehiculo", selection: $selection) {
@@ -53,13 +53,12 @@ struct AddVehicleView: View {
     }
     
     func agregarRegistro(){
-        addVehicleViewModel.addVehicle(matricula: matricula, cilindraje: Int(cilindraje) ?? 0, tipoVehiculo: selection)
-        //parqueadero.obtenerRegistros()
-        //presentationMode.wrappedValue.dismiss()
+        addVehicleViewModel.addVehicle(matricula: matricula.value, cilindraje: Int(cilindraje) ?? 0, tipoVehiculo: selection) {
+            parqueadero.obtenerRegistros()
+            presentationMode.wrappedValue.dismiss()
+        }
     }
 }
-
-
 
 enum TipoVehiculo: String, CaseIterable  {
     case Moto, Carro

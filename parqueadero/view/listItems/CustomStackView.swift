@@ -11,15 +11,17 @@ struct CustomStackView: View {
     
     let titulo: String
     let info: String
+    let tituloFont: Font
+    let infoFont: Font
     
     var body: some View {
         HStack{
             Text(titulo)
+                .font(tituloFont)
                 .bold()
             Spacer()
             
-            Text(info)
-                
+            Text(info).font(infoFont)
         }
     }
 }

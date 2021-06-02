@@ -22,10 +22,7 @@ class TotalFactura {
         let horas = direnciaFechas.hour ?? 0
         let minutos = direnciaFechas.minute ?? 0
         
-        var dias = 0
         var precio = 0
-                    
-        print("minutos: \(minutos)")
         
         if minutos > 0 && minutos < 60{
             if registro.getVehiculo().getTipo() == "carro"{
@@ -34,18 +31,13 @@ class TotalFactura {
             else{
                 precio = Const.horaMoto
             }
-        }
-
-        if horas > 1 && horas <= 9{
+        }else{
             if registro.getVehiculo().getTipo() == "carro"{
                 precio = Const.horaCarro * horas
             }
             else{
                 precio = Const.horaMoto * horas
             }
-        }
-        else{
-
         }
         
         if registro.getVehiculo().getTipo() == "moto" && registro.getVehiculo().getCilindraje() > 500{

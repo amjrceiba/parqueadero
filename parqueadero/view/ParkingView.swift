@@ -32,6 +32,5 @@ struct ParkingView: View {
         .onAppear{
             parqueadero.obtenerRegistros()
         }
-        
     }
 }

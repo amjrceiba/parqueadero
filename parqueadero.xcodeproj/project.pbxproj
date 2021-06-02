@@ -24,6 +24,7 @@
 		CE333E2E2667557D00EFB20D /* RegistroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E2D2667557C00EFB20D /* RegistroViewModel.swift */; };
 		CE333E302667558F00EFB20D /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E2F2667558F00EFB20D /* RegistroView.swift */; };
 		CE333E3926678AF100EFB20D /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E3826678AF100EFB20D /* CustomStackView.swift */; };
+		CE333E3C2667972A00EFB20D /* TextLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE333E3B2667972A00EFB20D /* TextLimiter.swift */; };
 		CE92B38B2665A8E2000DCE7B /* parqueaderoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92B38A2665A8E2000DCE7B /* parqueaderoTests.swift */; };
 		CEE1E42C2665A70500892843 /* parqueaderoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1E42B2665A70500892843 /* parqueaderoApp.swift */; };
 		CEE1E42E2665A70500892843 /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE1E42D2665A70500892843 /* ParkingView.swift */; };
@@ -72,6 +73,7 @@
 		CE333E2D2667557C00EFB20D /* RegistroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewModel.swift; sourceTree = "<group>"; };
 		CE333E2F2667558F00EFB20D /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
 		CE333E3826678AF100EFB20D /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		CE333E3B2667972A00EFB20D /* TextLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLimiter.swift; sourceTree = "<group>"; };
 		CE92B3882665A8E2000DCE7B /* parqueaderoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parqueaderoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE92B38A2665A8E2000DCE7B /* parqueaderoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueaderoTests.swift; sourceTree = "<group>"; };
 		CE92B38C2665A8E2000DCE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +171,14 @@
 			path = anticorruption;
 			sourceTree = "<group>";
 		};
+		CE333E3A2667971100EFB20D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CE333E3B2667972A00EFB20D /* TextLimiter.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CE92B3892665A8E2000DCE7B /* parqueaderoTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +210,7 @@
 		CEE1E42A2665A70500892843 /* parqueadero */ = {
 			isa = PBXGroup;
 			children = (
+				CE333E3A2667971100EFB20D /* Util */,
 				CEE1E4342665A70700892843 /* Info.plist */,
 				CEE1E42F2665A70700892843 /* Assets.xcassets */,
 				CE333E1826671D0600EFB20D /* anticorruption */,
@@ -336,6 +347,7 @@
 				CE333E1526671BA700EFB20D /* RegistroModel.swift in Sources */,
 				CE333E2E2667557D00EFB20D /* RegistroViewModel.swift in Sources */,
 				CEE1E42E2665A70500892843 /* ParkingView.swift in Sources */,
+				CE333E3C2667972A00EFB20D /* TextLimiter.swift in Sources */,
 				CE333E1726671BB300EFB20D /* VehiculoModel.swift in Sources */,
 				CE333E0E2667156200EFB20D /* ParkingViewModel.swift in Sources */,
 				CE333E1C26671D3C00EFB20D /* VehiculoTranslator.swift in Sources */,

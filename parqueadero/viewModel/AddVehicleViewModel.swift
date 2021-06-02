@@ -14,7 +14,7 @@ class AddVehicleViewModel: ObservableObject {
     @Published var showAlert = false
     @Published var errorMessage = ""
     
-    func addVehicle(matricula: String, cilindraje: Int, tipoVehiculo: TipoVehiculo){
+    func addVehicle(matricula: String, cilindraje: Int, tipoVehiculo: TipoVehiculo, completion: @escaping()->Void){
         do{
             let date = Date()
             let vehiculo = try crearVehiculo(matricula: matricula.lowercased(), tipoVehiculo: tipoVehiculo, cilindraje)
@@ -23,6 +23,7 @@ class AddVehicleViewModel: ObservableObject {
             let registroSertvice = RegistroService(registroRepository: registroRepository)
             
             try registroSertvice.guardarRegistro(registro: registro)
+            completion()
         }
         catch{
             showAlert = true
