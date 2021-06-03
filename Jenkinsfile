@@ -25,7 +25,7 @@ pipeline {
     stage('Build') {
       // Build and Test
       steps {
-        sh 'xcodebuild -scheme "parqueadero" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 11,OS=14.5"'
+        sh 'xcodebuild -workspace parqueadero.xcworkspace -scheme "parqueadero" -configuration "Debug" build test -destination "platform=iOS Simulator,name=iPhone 11,OS=14.5"'
       }
     }
 
