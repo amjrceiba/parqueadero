@@ -32,6 +32,7 @@ struct AddVehiculoView: View {
             Section{
                 TextField("Matricula", text: $matricula.value)
                     .keyboardType(.asciiCapable)
+                    .accessibility(identifier: "matriculaTextField")
                 
                 Picker("Tipo de vehiculo", selection: $tipoVehiculoSeleccionado) {
                     ForEach(TipoVehiculo.allCases, id: \.self) { value in
@@ -59,7 +60,9 @@ struct AddVehiculoView: View {
                     Text("Ingresar")
                 }
                 .frame(maxWidth: .infinity)
+                .accessibility(identifier: "ingresar")
             }
+            
         }
         .alert(isPresented: $addVehiculoViewModel.showAlert) {
             Alert(

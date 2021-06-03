@@ -40,7 +40,6 @@ struct parqueaderoView: View {
                 }
                 .accessibility(identifier: "toolbarButton")
             }
-            .accessibility(identifier: "toolbarButton")
         }
         .onAppear{
             parqueadero.obtenerRegistros()

@@ -13,15 +13,23 @@ class parqueaderoUITests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testExample() throws {
+    func testAgregarVehiculo() throws {
         let app = XCUIApplication()
         app.launch()
         
-        let toolbarButton = app.toolbarButtons["toolbarButton"]
+        let toolbarButton = app.buttons.firstMatch
         
         toolbarButton.tap()
                 
+        let matriculaTextField = app.textFields["matriculaTextField"]
+        matriculaTextField.tap()
+        matriculaTextField.typeText("cdg123")
+        
+        let ingresarButton = app.buttons["ingresar"]
+        ingresarButton.tap()
+        
+        let list = app.scrollViews.firstMatch
+        
+        XCTAssertTrue(list.exists)
     }
-
-    
 }
