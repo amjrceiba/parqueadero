@@ -56,11 +56,32 @@ class domainTests: XCTestCase {
         // MARK: - Arrange
         let matricula = "bbc123"
         let carro = try Carro(matricula: matricula)
-        // MARK: - Act
         
-        let registro = try Registro(fechaIngreso: Date(), vehiculo: carro)
-        print(registro.getId())
+        // MARK: - Assert
+        let registro = try Registro(id: UUID().uuidString, fechaIngreso: Date(), vehiculo: carro)
+        
         XCTAssertEqual(registro.getVehiculo().getMatricula(), "bbc123")
+    }
+    
+    func testValidarFechaYMatriculaRegistro()throws{
+        // MARK: - Arrange
+        let matricula = "abc123"
+        let carro = try Carro(matricula: matricula)
+
+        // MARK: - Act
+        // MARK: - Assert
+        XCTAssertThrowsError(try Registro(id: UUID().uuidString, fechaIngreso: Date(), vehiculo: carro))
+    }
+    
+    func testValidarAgregarRegistro()throws{
+        // MARK: - Arrange
+        let matricula = "bbc123"
+        let carro = try Carro(matricula: matricula)
+
+        // MARK: - Act
+        let registro = try Registro(id: UUID().uuidString, fechaIngreso: Date(), vehiculo: carro)
+        // MARK: - Assert
+        XCTAssertThrowsError(try registro.validarAgregar(count: 20, limite: 10))
     }
     
 }

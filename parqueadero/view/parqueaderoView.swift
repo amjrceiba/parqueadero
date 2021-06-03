@@ -38,7 +38,9 @@ struct parqueaderoView: View {
                 Button(action:{showingSheet.toggle()}){
                     Image(systemName: "car")
                 }
+                .accessibility(identifier: "toolbarButton")
             }
+            .accessibility(identifier: "toolbarButton")
         }
         .onAppear{
             parqueadero.obtenerRegistros()
