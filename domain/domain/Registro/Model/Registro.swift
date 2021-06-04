@@ -12,6 +12,8 @@ public class Registro {
     private let domingo = 1
     private let lunes = 2
     private let prefijoMatricula = "a"
+    private let limiteCarros = 20
+    private let limiteMotos = 10
     
     private var id: String
     private var fechaIngreso: Date
@@ -28,6 +30,14 @@ public class Registro {
         self.fechaIngreso = fechaIngreso
         self.vehiculo = vehiculo
         try validarFechaYMatricula(fechaIngreso: self.fechaIngreso, vehiculo: self.vehiculo)
+    }
+    
+    public init(id: String, fechaIngreso: Date, vehiculo: Vehiculo, vehiculosActuales: Int) throws {
+        self.id = id
+        self.fechaIngreso = fechaIngreso
+        self.vehiculo = vehiculo
+        try validarFechaYMatricula(fechaIngreso: self.fechaIngreso, vehiculo: self.vehiculo)
+        try validarAgregar(vehiculosActuales: vehiculosActuales, limiteVehiculos: vehiculo is Moto ? limiteMotos : limiteCarros)
     }
     
     private func validarFechaYMatricula(fechaIngreso: Date, vehiculo: Vehiculo) throws{

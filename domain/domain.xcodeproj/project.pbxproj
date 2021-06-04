@@ -19,7 +19,6 @@
 		CE91472526683A4D00718C46 /* RegistroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91472426683A4D00718C46 /* RegistroService.swift */; };
 		CE9147882668812000718C46 /* Factura.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147872668812000718C46 /* Factura.swift */; };
 		CE91478A2668815000718C46 /* TotalFactura.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147892668815000718C46 /* TotalFactura.swift */; };
-		CE914792266885AA00718C46 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914791266885AA00718C46 /* Const.swift */; };
 		CEA078F52669BE5400632678 /* VehiculoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA078F42669BE5400632678 /* VehiculoTests.swift */; };
 		CEA078F72669BE6400632678 /* RegistroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA078F62669BE6400632678 /* RegistroTests.swift */; };
 		CEA078F92669BE7800632678 /* FacturaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA078F82669BE7800632678 /* FacturaTests.swift */; };
@@ -51,7 +50,6 @@
 		CE91472426683A4D00718C46 /* RegistroService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroService.swift; sourceTree = "<group>"; };
 		CE9147872668812000718C46 /* Factura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factura.swift; sourceTree = "<group>"; };
 		CE9147892668815000718C46 /* TotalFactura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalFactura.swift; sourceTree = "<group>"; };
-		CE914791266885AA00718C46 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CEA078F42669BE5400632678 /* VehiculoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculoTests.swift; sourceTree = "<group>"; };
 		CEA078F62669BE6400632678 /* RegistroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroTests.swift; sourceTree = "<group>"; };
 		CEA078F82669BE7800632678 /* FacturaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacturaTests.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				CE91470A2668300E00718C46 /* Vehiculo */,
 				CE9146CB26682F9D00718C46 /* domain.h */,
 				CE9146CC26682F9D00718C46 /* Info.plist */,
-				CE914791266885AA00718C46 /* Const.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -343,7 +340,6 @@
 				CE91471D266834A800718C46 /* Registro.swift in Sources */,
 				CE91472326683A3400718C46 /* RegistroRepository.swift in Sources */,
 				CE9147882668812000718C46 /* Factura.swift in Sources */,
-				CE914792266885AA00718C46 /* Const.swift in Sources */,
 				CE9147142668307800718C46 /* Vehiculo.swift in Sources */,
 				CE9147152668307800718C46 /* Carro.swift in Sources */,
 				CE91471F266834F600718C46 /* ErroresRegistroEnum.swift in Sources */,

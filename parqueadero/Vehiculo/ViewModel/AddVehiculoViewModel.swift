@@ -18,7 +18,7 @@ class AddVehiculoViewModel: ObservableObject {
             let date = Date()
             let vehiculo = try crearVehiculo(matricula: matricula.lowercased(), tipoVehiculo: tipoVehiculo, cilindraje)
             
-            let registro = try Registro(id: UUID().uuidString,fechaIngreso: date, vehiculo: vehiculo)
+            let registro = try Registro(id: UUID().uuidString,fechaIngreso: date, vehiculo: vehiculo, vehiculosActuales: obtenerCapacidad(tipoVehiculo: tipoVehiculo))
             let registroService = RegistroService(registroRepository: RegistroRepositoryRealm())
             try registroService.guardarRegistro(registro: registro)
             
@@ -40,5 +40,16 @@ class AddVehiculoViewModel: ObservableObject {
         }
         
         return vehiculo
+    }
+    
+    func obtenerCapacidad(tipoVehiculo: TipoVehiculo)->Int{
+        var capacidad = 0
+        switch tipoVehiculo {
+        case .Carro:
+            capacidad = RegistroRepositoryRealm().getCarrosCount()
+        case .Moto:
+            capacidad = RegistroRepositoryRealm().getMotosCount()
+        }
+        return capacidad
     }
 }
