@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import domain
-import infraestructure
+import dominio
+import infraestructura
 
 class ParqueaderoViewModel: ObservableObject {
     @Published var registros = [Registro]()

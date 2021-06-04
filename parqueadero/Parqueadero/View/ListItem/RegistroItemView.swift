@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import domain
+import dominio
 
 struct RegistroItemView: View {
     let registro: Registro

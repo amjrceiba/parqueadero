@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import domain
-import infraestructure
+import dominio
+import infraestructura
 
 class AddVehiculoViewModel: ObservableObject {
     @Published var showAlert = false

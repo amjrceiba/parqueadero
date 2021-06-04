@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import domain
+import dominio
 
 class MotoTraslator {
     

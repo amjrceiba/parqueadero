@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import domain
-import infraestructure
+import dominio
+import infraestructura
 
 struct ParqueaderoView: View {
     

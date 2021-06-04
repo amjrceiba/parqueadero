@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import domain
+import dominio
 import RealmSwift
 
 class RegistroMotoTraslator {

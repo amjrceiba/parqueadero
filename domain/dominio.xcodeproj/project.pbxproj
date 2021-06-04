@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE9146D226682F9D00718C46 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9146C826682F9D00718C46 /* domain.framework */; };
+		CE1456B02669E1B700C25E82 /* RegistroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1456AF2669E1B700C25E82 /* RegistroRepository.swift */; };
+		CE9146D226682F9D00718C46 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9146C826682F9D00718C46 /* dominio.framework */; };
 		CE9146D926682F9D00718C46 /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9146CB26682F9D00718C46 /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE9147102668306F00718C46 /* ErroresVehiculoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91470F2668306F00718C46 /* ErroresVehiculoEnum.swift */; };
 		CE9147142668307800718C46 /* Vehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147112668307800718C46 /* Vehiculo.swift */; };
@@ -15,7 +16,6 @@
 		CE9147162668307800718C46 /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147132668307800718C46 /* Moto.swift */; };
 		CE91471D266834A800718C46 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91471C266834A800718C46 /* Registro.swift */; };
 		CE91471F266834F600718C46 /* ErroresRegistroEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91471E266834F600718C46 /* ErroresRegistroEnum.swift */; };
-		CE91472326683A3400718C46 /* RegistroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91472226683A3400718C46 /* RegistroRepository.swift */; };
 		CE91472526683A4D00718C46 /* RegistroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91472426683A4D00718C46 /* RegistroService.swift */; };
 		CE9147882668812000718C46 /* Factura.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147872668812000718C46 /* Factura.swift */; };
 		CE91478A2668815000718C46 /* TotalFactura.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147892668815000718C46 /* TotalFactura.swift */; };
@@ -35,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE9146C826682F9D00718C46 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1456AF2669E1B700C25E82 /* RegistroRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroRepository.swift; sourceTree = "<group>"; };
+		CE9146C826682F9D00718C46 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146CB26682F9D00718C46 /* domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = domain.h; sourceTree = "<group>"; };
 		CE9146CC26682F9D00718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE9146D126682F9D00718C46 /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9146D126682F9D00718C46 /* dominioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dominioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146D826682F9D00718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE91470F2668306F00718C46 /* ErroresVehiculoEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErroresVehiculoEnum.swift; sourceTree = "<group>"; };
 		CE9147112668307800718C46 /* Vehiculo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehiculo.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		CE9147132668307800718C46 /* Moto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
 		CE91471C266834A800718C46 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
 		CE91471E266834F600718C46 /* ErroresRegistroEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErroresRegistroEnum.swift; sourceTree = "<group>"; };
-		CE91472226683A3400718C46 /* RegistroRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistroRepository.swift; path = domain/Registro/repository/RegistroRepository.swift; sourceTree = SOURCE_ROOT; };
 		CE91472426683A4D00718C46 /* RegistroService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroService.swift; sourceTree = "<group>"; };
 		CE9147872668812000718C46 /* Factura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factura.swift; sourceTree = "<group>"; };
 		CE9147892668815000718C46 /* TotalFactura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalFactura.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9146D226682F9D00718C46 /* domain.framework in Frameworks */,
+				CE9146D226682F9D00718C46 /* dominio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +77,8 @@
 		CE9146BE26682F9D00718C46 = {
 			isa = PBXGroup;
 			children = (
-				CE9146CA26682F9D00718C46 /* domain */,
-				CE9146D526682F9D00718C46 /* domainTests */,
+				CE9146CA26682F9D00718C46 /* dominio */,
+				CE9146D526682F9D00718C46 /* dominioTests */,
 				CE9146C926682F9D00718C46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,13 +86,13 @@
 		CE9146C926682F9D00718C46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE9146C826682F9D00718C46 /* domain.framework */,
-				CE9146D126682F9D00718C46 /* domainTests.xctest */,
+				CE9146C826682F9D00718C46 /* dominio.framework */,
+				CE9146D126682F9D00718C46 /* dominioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE9146CA26682F9D00718C46 /* domain */ = {
+		CE9146CA26682F9D00718C46 /* dominio */ = {
 			isa = PBXGroup;
 			children = (
 				CE914780266880CE00718C46 /* Factura */,
@@ -101,10 +101,10 @@
 				CE9146CB26682F9D00718C46 /* domain.h */,
 				CE9146CC26682F9D00718C46 /* Info.plist */,
 			);
-			path = domain;
+			path = dominio;
 			sourceTree = "<group>";
 		};
-		CE9146D526682F9D00718C46 /* domainTests */ = {
+		CE9146D526682F9D00718C46 /* dominioTests */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078F32669BE0F00632678 /* Factura */,
@@ -112,7 +112,7 @@
 				CEA078F12669BE0000632678 /* Vehiculo */,
 				CE9146D826682F9D00718C46 /* Info.plist */,
 			);
-			path = domainTests;
+			path = dominioTests;
 			sourceTree = "<group>";
 		};
 		CE91470A2668300E00718C46 /* Vehiculo */ = {
@@ -172,7 +172,7 @@
 		CE91471A2668345800718C46 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				CE91472226683A3400718C46 /* RegistroRepository.swift */,
+				CE1456AF2669E1B700C25E82 /* RegistroRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CE9146C726682F9D00718C46 /* domain */ = {
+		CE9146C726682F9D00718C46 /* dominio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE9146DC26682F9D00718C46 /* Build configuration list for PBXNativeTarget "domain" */;
+			buildConfigurationList = CE9146DC26682F9D00718C46 /* Build configuration list for PBXNativeTarget "dominio" */;
 			buildPhases = (
 				CE9146C326682F9D00718C46 /* Headers */,
 				CE9146C426682F9D00718C46 /* Sources */,
@@ -253,14 +253,14 @@
 			);
 			dependencies = (
 			);
-			name = domain;
+			name = dominio;
 			productName = domain;
-			productReference = CE9146C826682F9D00718C46 /* domain.framework */;
+			productReference = CE9146C826682F9D00718C46 /* dominio.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CE9146D026682F9D00718C46 /* domainTests */ = {
+		CE9146D026682F9D00718C46 /* dominioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE9146DF26682F9D00718C46 /* Build configuration list for PBXNativeTarget "domainTests" */;
+			buildConfigurationList = CE9146DF26682F9D00718C46 /* Build configuration list for PBXNativeTarget "dominioTests" */;
 			buildPhases = (
 				CE9146CD26682F9D00718C46 /* Sources */,
 				CE9146CE26682F9D00718C46 /* Frameworks */,
@@ -271,9 +271,9 @@
 			dependencies = (
 				CE9146D426682F9D00718C46 /* PBXTargetDependency */,
 			);
-			name = domainTests;
+			name = dominioTests;
 			productName = domainTests;
-			productReference = CE9146D126682F9D00718C46 /* domainTests.xctest */;
+			productReference = CE9146D126682F9D00718C46 /* dominioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE9146C226682F9D00718C46 /* Build configuration list for PBXProject "domain" */;
+			buildConfigurationList = CE9146C226682F9D00718C46 /* Build configuration list for PBXProject "dominio" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -307,8 +307,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE9146C726682F9D00718C46 /* domain */,
-				CE9146D026682F9D00718C46 /* domainTests */,
+				CE9146C726682F9D00718C46 /* dominio */,
+				CE9146D026682F9D00718C46 /* dominioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,11 +338,11 @@
 				CE91472526683A4D00718C46 /* RegistroService.swift in Sources */,
 				CE9147162668307800718C46 /* Moto.swift in Sources */,
 				CE91471D266834A800718C46 /* Registro.swift in Sources */,
-				CE91472326683A3400718C46 /* RegistroRepository.swift in Sources */,
 				CE9147882668812000718C46 /* Factura.swift in Sources */,
 				CE9147142668307800718C46 /* Vehiculo.swift in Sources */,
 				CE9147152668307800718C46 /* Carro.swift in Sources */,
 				CE91471F266834F600718C46 /* ErroresRegistroEnum.swift in Sources */,
+				CE1456B02669E1B700C25E82 /* RegistroRepository.swift in Sources */,
 				CE91478A2668815000718C46 /* TotalFactura.swift in Sources */,
 				CE9147102668306F00718C46 /* ErroresVehiculoEnum.swift in Sources */,
 			);
@@ -363,7 +363,7 @@
 /* Begin PBXTargetDependency section */
 		CE9146D426682F9D00718C46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE9146C726682F9D00718C46 /* domain */;
+			target = CE9146C726682F9D00718C46 /* dominio */;
 			targetProxy = CE9146D326682F9D00718C46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -501,14 +501,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = domain/Info.plist;
+				INFOPLIST_FILE = dominio/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.dominio;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -527,14 +527,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = domain/Info.plist;
+				INFOPLIST_FILE = dominio/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.domain;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.dominio;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -583,7 +583,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE9146C226682F9D00718C46 /* Build configuration list for PBXProject "domain" */ = {
+		CE9146C226682F9D00718C46 /* Build configuration list for PBXProject "dominio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE9146DA26682F9D00718C46 /* Debug */,
@@ -592,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE9146DC26682F9D00718C46 /* Build configuration list for PBXNativeTarget "domain" */ = {
+		CE9146DC26682F9D00718C46 /* Build configuration list for PBXNativeTarget "dominio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE9146DD26682F9D00718C46 /* Debug */,
@@ -601,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE9146DF26682F9D00718C46 /* Build configuration list for PBXNativeTarget "domainTests" */ = {
+		CE9146DF26682F9D00718C46 /* Build configuration list for PBXNativeTarget "dominioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE9146E026682F9D00718C46 /* Debug */,
