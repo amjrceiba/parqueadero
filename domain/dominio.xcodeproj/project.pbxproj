@@ -95,9 +95,9 @@
 		CE9146CA26682F9D00718C46 /* dominio */ = {
 			isa = PBXGroup;
 			children = (
-				CE914780266880CE00718C46 /* Factura */,
-				CE9147172668344000718C46 /* Registro */,
-				CE91470A2668300E00718C46 /* Vehiculo */,
+				CE914780266880CE00718C46 /* factura */,
+				CE9147172668344000718C46 /* registro */,
+				CE91470A2668300E00718C46 /* vehiculo */,
 				CE9146CB26682F9D00718C46 /* domain.h */,
 				CE9146CC26682F9D00718C46 /* Info.plist */,
 			);
@@ -115,91 +115,91 @@
 			path = dominioTests;
 			sourceTree = "<group>";
 		};
-		CE91470A2668300E00718C46 /* Vehiculo */ = {
+		CE91470A2668300E00718C46 /* vehiculo */ = {
 			isa = PBXGroup;
 			children = (
-				CE91470C2668302900718C46 /* Model */,
-				CE91470B2668301E00718C46 /* Errors */,
+				CE91470C2668302900718C46 /* model */,
+				CE91470B2668301E00718C46 /* errors */,
 			);
-			path = Vehiculo;
+			path = vehiculo;
 			sourceTree = "<group>";
 		};
-		CE91470B2668301E00718C46 /* Errors */ = {
+		CE91470B2668301E00718C46 /* errors */ = {
 			isa = PBXGroup;
 			children = (
 				CE91470F2668306F00718C46 /* ErroresVehiculoEnum.swift */,
 			);
-			path = Errors;
+			path = errors;
 			sourceTree = "<group>";
 		};
-		CE91470C2668302900718C46 /* Model */ = {
+		CE91470C2668302900718C46 /* model */ = {
 			isa = PBXGroup;
 			children = (
 				CE9147122668307800718C46 /* Carro.swift */,
 				CE9147132668307800718C46 /* Moto.swift */,
 				CE9147112668307800718C46 /* Vehiculo.swift */,
 			);
-			path = Model;
+			path = model;
 			sourceTree = "<group>";
 		};
-		CE9147172668344000718C46 /* Registro */ = {
+		CE9147172668344000718C46 /* registro */ = {
 			isa = PBXGroup;
 			children = (
-				CE91471B2668346200718C46 /* Service */,
-				CE91471A2668345800718C46 /* Repository */,
-				CE9147192668345200718C46 /* Model */,
-				CE9147182668344C00718C46 /* Errors */,
+				CE91471B2668346200718C46 /* service */,
+				CE91471A2668345800718C46 /* repository */,
+				CE9147192668345200718C46 /* model */,
+				CE9147182668344C00718C46 /* errors */,
 			);
-			path = Registro;
+			path = registro;
 			sourceTree = "<group>";
 		};
-		CE9147182668344C00718C46 /* Errors */ = {
+		CE9147182668344C00718C46 /* errors */ = {
 			isa = PBXGroup;
 			children = (
 				CE91471E266834F600718C46 /* ErroresRegistroEnum.swift */,
 			);
-			path = Errors;
+			path = errors;
 			sourceTree = "<group>";
 		};
-		CE9147192668345200718C46 /* Model */ = {
+		CE9147192668345200718C46 /* model */ = {
 			isa = PBXGroup;
 			children = (
 				CE91471C266834A800718C46 /* Registro.swift */,
 			);
-			path = Model;
+			path = model;
 			sourceTree = "<group>";
 		};
-		CE91471A2668345800718C46 /* Repository */ = {
+		CE91471A2668345800718C46 /* repository */ = {
 			isa = PBXGroup;
 			children = (
 				CE1456AF2669E1B700C25E82 /* RegistroRepository.swift */,
 			);
-			path = Repository;
+			path = repository;
 			sourceTree = "<group>";
 		};
-		CE91471B2668346200718C46 /* Service */ = {
+		CE91471B2668346200718C46 /* service */ = {
 			isa = PBXGroup;
 			children = (
 				CE91472426683A4D00718C46 /* RegistroService.swift */,
 			);
-			path = Service;
+			path = service;
 			sourceTree = "<group>";
 		};
-		CE914780266880CE00718C46 /* Factura */ = {
+		CE914780266880CE00718C46 /* factura */ = {
 			isa = PBXGroup;
 			children = (
-				CE9147842668810300718C46 /* Model */,
+				CE9147842668810300718C46 /* model */,
 			);
-			path = Factura;
+			path = factura;
 			sourceTree = "<group>";
 		};
-		CE9147842668810300718C46 /* Model */ = {
+		CE9147842668810300718C46 /* model */ = {
 			isa = PBXGroup;
 			children = (
 				CE9147892668815000718C46 /* TotalFactura.swift */,
 				CE9147872668812000718C46 /* Factura.swift */,
 			);
-			path = Model;
+			path = model;
 			sourceTree = "<group>";
 		};
 		CEA078F12669BE0000632678 /* Vehiculo */ = {

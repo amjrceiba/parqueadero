@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE1456A52669DF4400C25E82 /* infraestructura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1456A42669DF4400C25E82 /* infraestructura.framework */; };
-		CE1456A62669DF4400C25E82 /* infraestructura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE1456A42669DF4400C25E82 /* infraestructura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE1456AD2669E05A00C25E82 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1456AC2669E05A00C25E82 /* dominio.framework */; };
-		CE1456AE2669E05A00C25E82 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE1456AC2669E05A00C25E82 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE7F2C832669EB13009447F6 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C822669EB13009447F6 /* dominio.framework */; };
+		CE7F2C842669EB13009447F6 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C822669EB13009447F6 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE7F2C862669EB18009447F6 /* infraestructura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C852669EB18009447F6 /* infraestructura.framework */; };
+		CE7F2C872669EB18009447F6 /* infraestructura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C852669EB18009447F6 /* infraestructura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE91469426682F2200718C46 /* parqueaderoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91469326682F2200718C46 /* parqueaderoApp.swift */; };
 		CE91469626682F2200718C46 /* ParqueaderoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91469526682F2200718C46 /* ParqueaderoView.swift */; };
 		CE91469826682F2400718C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE91469726682F2400718C46 /* Assets.xcassets */; };
@@ -46,14 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CE91474426683FB100718C46 /* Embed Frameworks */ = {
+		CE7F2C772669EAE3009447F6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE1456AE2669E05A00C25E82 /* dominio.framework in Embed Frameworks */,
-				CE1456A62669DF4400C25E82 /* infraestructura.framework in Embed Frameworks */,
+				CE7F2C842669EB13009447F6 /* dominio.framework in Embed Frameworks */,
+				CE7F2C872669EB18009447F6 /* infraestructura.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,9 +61,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE1456A12669DE4000C25E82 /* infrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = infrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE1456A42669DF4400C25E82 /* infraestructura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = infraestructura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE1456AC2669E05A00C25E82 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7F2C822669EB13009447F6 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7F2C852669EB18009447F6 /* infraestructura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = infraestructura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91469026682F2200718C46 /* parqueadero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parqueadero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91469326682F2200718C46 /* parqueaderoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueaderoApp.swift; sourceTree = "<group>"; };
 		CE91469526682F2200718C46 /* ParqueaderoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParqueaderoView.swift; sourceTree = "<group>"; };
@@ -74,8 +73,6 @@
 		CE9146AC26682F2400718C46 /* parqueaderoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parqueaderoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146B026682F2400718C46 /* parqueaderoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueaderoUITests.swift; sourceTree = "<group>"; };
 		CE9146B226682F2400718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE91474126683FB100718C46 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE91474526683FB500718C46 /* infraestructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = infraestructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91475B26684BBD00718C46 /* AddVehiculoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehiculoView.swift; sourceTree = "<group>"; };
 		CE91475D266852B200718C46 /* AddVehiculoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehiculoViewModel.swift; sourceTree = "<group>"; };
 		CE91477B26687EF500718C46 /* RegistroItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroItemView.swift; sourceTree = "<group>"; };
@@ -93,8 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1456AD2669E05A00C25E82 /* dominio.framework in Frameworks */,
-				CE1456A52669DF4400C25E82 /* infraestructura.framework in Frameworks */,
+				CE7F2C832669EB13009447F6 /* dominio.framework in Frameworks */,
+				CE7F2C862669EB18009447F6 /* infraestructura.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,13 +112,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7F2C812669EB13009447F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7F2C852669EB18009447F6 /* infraestructura.framework */,
+				CE7F2C822669EB13009447F6 /* dominio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE91468726682F2200718C46 = {
 			isa = PBXGroup;
 			children = (
 				CE91469226682F2200718C46 /* parqueadero */,
 				CE9146AF26682F2400718C46 /* parqueaderoUITests */,
 				CE91469126682F2200718C46 /* Products */,
-				CE91474026683FB100718C46 /* Frameworks */,
+				CE7F2C812669EB13009447F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,11 +144,11 @@
 		CE91469226682F2200718C46 /* parqueadero */ = {
 			isa = PBXGroup;
 			children = (
-				CEA078E72669B13E00632678 /* Registro */,
-				CEA078E62669B12F00632678 /* Vehiculo */,
-				CEA078E52669B12000632678 /* Parqueadero */,
-				CEA078EC2669B20800632678 /* Common */,
-				CE91475626684B3800718C46 /* Controller */,
+				CEA078E72669B13E00632678 /* registro */,
+				CEA078E62669B12F00632678 /* vehiculo */,
+				CEA078E52669B12000632678 /* parqueadero */,
+				CEA078EC2669B20800632678 /* common */,
+				CE91475626684B3800718C46 /* controller */,
 				CE91469926682F2400718C46 /* Preview Content */,
 				CE91469726682F2400718C46 /* Assets.xcassets */,
 				CE91469C26682F2400718C46 /* Info.plist */,
@@ -167,24 +173,12 @@
 			path = parqueaderoUITests;
 			sourceTree = "<group>";
 		};
-		CE91474026683FB100718C46 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE1456AC2669E05A00C25E82 /* dominio.framework */,
-				CE1456A42669DF4400C25E82 /* infraestructura.framework */,
-				CE1456A12669DE4000C25E82 /* infrastructure.framework */,
-				CE91474526683FB500718C46 /* infraestructure.framework */,
-				CE91474126683FB100718C46 /* domain.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE91475626684B3800718C46 /* Controller */ = {
+		CE91475626684B3800718C46 /* controller */ = {
 			isa = PBXGroup;
 			children = (
 				CE91469326682F2200718C46 /* parqueaderoApp.swift */,
 			);
-			path = Controller;
+			path = controller;
 			sourceTree = "<group>";
 		};
 		CE91475826684B4E00718C46 /* UtilUI */ = {
@@ -203,31 +197,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CEA078E52669B12000632678 /* Parqueadero */ = {
+		CEA078E52669B12000632678 /* parqueadero */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078EE2669B2B900632678 /* ViewModel */,
 				CEA078EA2669B1B500632678 /* View */,
 			);
-			path = Parqueadero;
+			path = parqueadero;
 			sourceTree = "<group>";
 		};
-		CEA078E62669B12F00632678 /* Vehiculo */ = {
+		CEA078E62669B12F00632678 /* vehiculo */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078EF2669B2C300632678 /* ViewModel */,
 				CEA078E92669B1AB00632678 /* View */,
 			);
-			path = Vehiculo;
+			path = vehiculo;
 			sourceTree = "<group>";
 		};
-		CEA078E72669B13E00632678 /* Registro */ = {
+		CEA078E72669B13E00632678 /* registro */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078F02669B2CB00632678 /* ViewModel */,
 				CEA078E82669B1A200632678 /* View */,
 			);
-			path = Registro;
+			path = registro;
 			sourceTree = "<group>";
 		};
 		CEA078E82669B1A200632678 /* View */ = {
@@ -263,14 +257,14 @@
 			path = ListItem;
 			sourceTree = "<group>";
 		};
-		CEA078EC2669B20800632678 /* Common */ = {
+		CEA078EC2669B20800632678 /* common */ = {
 			isa = PBXGroup;
 			children = (
 				CE91477D26687F2800718C46 /* Extensions */,
 				CE91475826684B4E00718C46 /* UtilUI */,
 				CEA078ED2669B22500632678 /* View */,
 			);
-			path = Common;
+			path = common;
 			sourceTree = "<group>";
 		};
 		CEA078ED2669B22500632678 /* View */ = {
@@ -316,7 +310,7 @@
 				CE91468C26682F2200718C46 /* Sources */,
 				CE91468D26682F2200718C46 /* Frameworks */,
 				CE91468E26682F2200718C46 /* Resources */,
-				CE91474426683FB100718C46 /* Embed Frameworks */,
+				CE7F2C772669EAE3009447F6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

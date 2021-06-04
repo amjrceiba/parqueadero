@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		CE1456A92669DFA600C25E82 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CE1456A82669DFA600C25E82 /* Realm */; };
 		CE1456AB2669DFA600C25E82 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE1456AA2669DFA600C25E82 /* RealmSwift */; };
-		CE1456B22669E29B00C25E82 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1456B12669E29B00C25E82 /* dominio.framework */; };
-		CE1456B32669E29B00C25E82 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE1456B12669E29B00C25E82 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE7F2C712669EAD6009447F6 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C702669EAD6009447F6 /* dominio.framework */; };
+		CE7F2C722669EAD6009447F6 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C702669EAD6009447F6 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE9146F626682FB900718C46 /* infraestructura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9146EC26682FB900718C46 /* infraestructura.framework */; };
-		CE9146FD26682FB900718C46 /* infraestructure.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9146EF26682FB900718C46 /* infraestructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE9146FD26682FB900718C46 /* infraestructura.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9146EF26682FB900718C46 /* infraestructura.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE91473826683ED900718C46 /* CarroEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91473726683ED900718C46 /* CarroEntity.swift */; };
 		CE91473A26683EF600718C46 /* MotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91473926683EF600718C46 /* MotoEntity.swift */; };
 		CE91474E2668445900718C46 /* RegistroMotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91474D2668445900718C46 /* RegistroMotoEntity.swift */; };
@@ -35,13 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CE1456B42669E29B00C25E82 /* Embed Frameworks */ = {
+		CE7F2C732669EAD6009447F6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE1456B32669E29B00C25E82 /* dominio.framework in Embed Frameworks */,
+				CE7F2C722669EAD6009447F6 /* dominio.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,14 +49,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE1456B12669E29B00C25E82 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7F2C702669EAD6009447F6 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146EC26682FB900718C46 /* infraestructura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = infraestructura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9146EF26682FB900718C46 /* infraestructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infraestructure.h; sourceTree = "<group>"; };
+		CE9146EF26682FB900718C46 /* infraestructura.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infraestructura.h; sourceTree = "<group>"; };
 		CE9146F026682FB900718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9146F526682FB900718C46 /* infraestructuraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infraestructuraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91473726683ED900718C46 /* CarroEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroEntity.swift; sourceTree = "<group>"; };
 		CE91473926683EF600718C46 /* MotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoEntity.swift; sourceTree = "<group>"; };
-		CE91473C26683FA700718C46 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91474D2668445900718C46 /* RegistroMotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMotoEntity.swift; sourceTree = "<group>"; };
 		CE91474F266844B000718C46 /* RegistroRepositoryRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroRepositoryRealm.swift; sourceTree = "<group>"; };
 		CE9147512668458100718C46 /* RegistroMotoTraslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMotoTraslator.swift; sourceTree = "<group>"; };
@@ -72,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1456AB2669DFA600C25E82 /* RealmSwift in Frameworks */,
-				CE1456B22669E29B00C25E82 /* dominio.framework in Frameworks */,
+				CE7F2C712669EAD6009447F6 /* dominio.framework in Frameworks */,
 				CE1456A92669DFA600C25E82 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,12 +87,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7F2C6F2669EAD6009447F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7F2C702669EAD6009447F6 /* dominio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE9146E226682FB900718C46 = {
 			isa = PBXGroup;
 			children = (
 				CE9146EE26682FB900718C46 /* infraestructura */,
 				CE9146ED26682FB900718C46 /* Products */,
-				CE91473B26683FA700718C46 /* Frameworks */,
+				CE7F2C6F2669EAD6009447F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,84 +116,75 @@
 		CE9146EE26682FB900718C46 /* infraestructura */ = {
 			isa = PBXGroup;
 			children = (
-				CE91472726683D3B00718C46 /* Registro */,
-				CE91472626683D2F00718C46 /* Vehiculo */,
-				CE9146EF26682FB900718C46 /* infraestructure.h */,
+				CE91472726683D3B00718C46 /* registro */,
+				CE91472626683D2F00718C46 /* vehiculo */,
+				CE9146EF26682FB900718C46 /* infraestructura.h */,
 				CE9146F026682FB900718C46 /* Info.plist */,
 			);
 			path = infraestructura;
 			sourceTree = "<group>";
 		};
-		CE91472626683D2F00718C46 /* Vehiculo */ = {
+		CE91472626683D2F00718C46 /* vehiculo */ = {
 			isa = PBXGroup;
 			children = (
-				CE91472A26683D5600718C46 /* Anticorruption */,
-				CE91472926683D5000718C46 /* Entity */,
+				CE91472A26683D5600718C46 /* anticorruption */,
+				CE91472926683D5000718C46 /* entity */,
 			);
-			path = Vehiculo;
+			path = vehiculo;
 			sourceTree = "<group>";
 		};
-		CE91472726683D3B00718C46 /* Registro */ = {
+		CE91472726683D3B00718C46 /* registro */ = {
 			isa = PBXGroup;
 			children = (
-				CE91472E26683D9300718C46 /* Anticorruption */,
-				CE91472D26683D8D00718C46 /* Entity */,
-				CE91472C26683D8700718C46 /* Repository */,
+				CE91472E26683D9300718C46 /* anticorruption */,
+				CE91472D26683D8D00718C46 /* entity */,
+				CE91472C26683D8700718C46 /* repository */,
 			);
-			path = Registro;
+			path = registro;
 			sourceTree = "<group>";
 		};
-		CE91472926683D5000718C46 /* Entity */ = {
+		CE91472926683D5000718C46 /* entity */ = {
 			isa = PBXGroup;
 			children = (
 				CE91473726683ED900718C46 /* CarroEntity.swift */,
 				CE91473926683EF600718C46 /* MotoEntity.swift */,
 			);
-			path = Entity;
+			path = entity;
 			sourceTree = "<group>";
 		};
-		CE91472A26683D5600718C46 /* Anticorruption */ = {
+		CE91472A26683D5600718C46 /* anticorruption */ = {
 			isa = PBXGroup;
 			children = (
 				CE91475F26685CD300718C46 /* CarroTraslator.swift */,
 				CE91476326685D9A00718C46 /* MotoTraslator.swift */,
 			);
-			path = Anticorruption;
+			path = anticorruption;
 			sourceTree = "<group>";
 		};
-		CE91472C26683D8700718C46 /* Repository */ = {
+		CE91472C26683D8700718C46 /* repository */ = {
 			isa = PBXGroup;
 			children = (
 				CE91474F266844B000718C46 /* RegistroRepositoryRealm.swift */,
 			);
-			path = Repository;
+			path = repository;
 			sourceTree = "<group>";
 		};
-		CE91472D26683D8D00718C46 /* Entity */ = {
+		CE91472D26683D8D00718C46 /* entity */ = {
 			isa = PBXGroup;
 			children = (
 				CE91474D2668445900718C46 /* RegistroMotoEntity.swift */,
 				CE91476526685E5D00718C46 /* RegistroCarroEntity.swift */,
 			);
-			path = Entity;
+			path = entity;
 			sourceTree = "<group>";
 		};
-		CE91472E26683D9300718C46 /* Anticorruption */ = {
+		CE91472E26683D9300718C46 /* anticorruption */ = {
 			isa = PBXGroup;
 			children = (
 				CE9147512668458100718C46 /* RegistroMotoTraslator.swift */,
 				CE914767266860AC00718C46 /* RegistroCarroTraslator.swift */,
 			);
-			path = Anticorruption;
-			sourceTree = "<group>";
-		};
-		CE91473B26683FA700718C46 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE1456B12669E29B00C25E82 /* dominio.framework */,
-				CE91473C26683FA700718C46 /* domain.framework */,
-			);
-			name = Frameworks;
+			path = anticorruption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,7 +194,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9146FD26682FB900718C46 /* infraestructure.h in Headers */,
+				CE9146FD26682FB900718C46 /* infraestructura.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +209,7 @@
 				CE9146E826682FB900718C46 /* Sources */,
 				CE9146E926682FB900718C46 /* Frameworks */,
 				CE9146EA26682FB900718C46 /* Resources */,
-				CE1456B42669E29B00C25E82 /* Embed Frameworks */,
+				CE7F2C732669EAD6009447F6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
