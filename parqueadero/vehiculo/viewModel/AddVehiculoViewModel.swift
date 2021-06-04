@@ -47,12 +47,14 @@ class AddVehiculoViewModel: ObservableObject {
     }
     
     func obtenerCapacidad(tipoVehiculo: TipoVehiculo)->Int{
+        let repositorio = ServiceFactory().obtenerRepository(tipoRepositorio: tipoRepositorio)
+        
         var capacidad = 0
         switch tipoVehiculo {
         case .Carro:
-            capacidad = RegistroRepositoryRealm().getCarrosCount()
+            capacidad = repositorio?.obtenerCantidadRegistrosCarro() ?? 0
         case .Moto:
-            capacidad = RegistroRepositoryRealm().getMotosCount()
+            capacidad = repositorio?.obtenerCantidadRegistrosMoto() ?? 0
         }
         return capacidad
     }

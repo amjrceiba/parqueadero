@@ -138,12 +138,12 @@
 		CE91469226682F2200718C46 /* parqueadero */ = {
 			isa = PBXGroup;
 			children = (
-				CE0C93B6266A82E700367AF8 /* factory */,
+				CE91475626684B3800718C46 /* controller */,
 				CEA078E72669B13E00632678 /* registro */,
 				CEA078E62669B12F00632678 /* vehiculo */,
 				CEA078E52669B12000632678 /* parqueadero */,
 				CEA078EC2669B20800632678 /* common */,
-				CE91475626684B3800718C46 /* controller */,
+				CE0C93B6266A82E700367AF8 /* factory */,
 				CE91469926682F2400718C46 /* Preview Content */,
 				CE91469726682F2400718C46 /* Assets.xcassets */,
 				CE91469C26682F2400718C46 /* Info.plist */,

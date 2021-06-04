@@ -10,6 +10,8 @@ import dominio
 import RealmSwift
 
 public class RegistroRepositoryRealm: RegistroRepository {
+    
+    
         
     public init(){}
     
@@ -63,12 +65,12 @@ public class RegistroRepositoryRealm: RegistroRepository {
         return registros
     }
     
-    public func getCarrosCount()->Int{
+    public func obtenerCantidadRegistrosCarro() -> Int {
         let realm = try! Realm()
         return RegistroCarroTraslator().getObjects(registrosCarrosEntities: realm.objects(RegistroCarroEntity.self)).count
     }
     
-    public func getMotosCount()->Int{
+    public func obtenerCantidadRegistrosMoto() -> Int {
         let realm = try! Realm()
         return RegistroMotoTraslator().getObjects(registrosMotosEntities: realm.objects(RegistroMotoEntity.self)).count
     }

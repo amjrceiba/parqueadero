@@ -11,4 +11,6 @@ public protocol RegistroRepository {
     func registrar(registro: Registro)throws
     func eliminar(registro: Registro)
     func obtenerRegistros()->[Registro]
+    func obtenerCantidadRegistrosCarro()->Int
+    func obtenerCantidadRegistrosMoto()->Int
 }

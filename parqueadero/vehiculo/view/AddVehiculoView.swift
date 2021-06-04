@@ -24,7 +24,7 @@ struct AddVehiculoView: View {
     @State var tipoVehiculoSeleccionado: TipoVehiculo = .Carro
     @ObservedObject var parqueadero: ParqueaderoViewModel = .shared
     
-    @State var cilindrajeSeleccionado: Int = 100
+    @State var cilindrajeSeleccionado: Int = 125
     private let cilindrajes = [125, 250, 500, 650, 900, 1000]
    
     var body: some View {
