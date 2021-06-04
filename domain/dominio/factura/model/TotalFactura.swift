@@ -9,8 +9,8 @@ import Foundation
 
 class TotalFactura {
     
-    private let horaMoto = 1000
-    private let horaCarro = 500
+    private let horaMoto = 500
+    private let horaCarro = 1000
     private let diaMoto = 8000
     private let diaCarro = 4000
     private let adicional = 2000

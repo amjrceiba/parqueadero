@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import dominio
 
 class VehiculoTests: XCTestCase {
     

@@ -11,7 +11,6 @@
 		CE1456AB2669DFA600C25E82 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE1456AA2669DFA600C25E82 /* RealmSwift */; };
 		CE7F2C922669F181009447F6 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C912669F181009447F6 /* dominio.framework */; };
 		CE7F2C932669F181009447F6 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C912669F181009447F6 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CE9146F626682FB900718C46 /* infraestructura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9146EC26682FB900718C46 /* infraestructura.framework */; };
 		CE9146FD26682FB900718C46 /* infraestructura.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9146EF26682FB900718C46 /* infraestructura.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE91473826683ED900718C46 /* CarroEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91473726683ED900718C46 /* CarroEntity.swift */; };
 		CE91473A26683EF600718C46 /* MotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91473926683EF600718C46 /* MotoEntity.swift */; };
@@ -23,16 +22,6 @@
 		CE91476626685E5D00718C46 /* RegistroCarroEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91476526685E5D00718C46 /* RegistroCarroEntity.swift */; };
 		CE914768266860AC00718C46 /* RegistroCarroTraslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914767266860AC00718C46 /* RegistroCarroTraslator.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CE9146F726682FB900718C46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE9146E326682FB900718C46 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE9146EB26682FB900718C46;
-			remoteInfo = infraestructure;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CE7F2C732669EAD6009447F6 /* Embed Frameworks */ = {
@@ -53,7 +42,6 @@
 		CE9146EC26682FB900718C46 /* infraestructura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = infraestructura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146EF26682FB900718C46 /* infraestructura.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infraestructura.h; sourceTree = "<group>"; };
 		CE9146F026682FB900718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE9146F526682FB900718C46 /* infraestructuraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infraestructuraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91473726683ED900718C46 /* CarroEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroEntity.swift; sourceTree = "<group>"; };
 		CE91473926683EF600718C46 /* MotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoEntity.swift; sourceTree = "<group>"; };
 		CE91474D2668445900718C46 /* RegistroMotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroMotoEntity.swift; sourceTree = "<group>"; };
@@ -73,14 +61,6 @@
 				CE1456AB2669DFA600C25E82 /* RealmSwift in Frameworks */,
 				CE7F2C922669F181009447F6 /* dominio.framework in Frameworks */,
 				CE1456A92669DFA600C25E82 /* Realm in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE9146F226682FB900718C46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE9146F626682FB900718C46 /* infraestructura.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				CE9146EC26682FB900718C46 /* infraestructura.framework */,
-				CE9146F526682FB900718C46 /* infraestructuraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,24 +203,6 @@
 			productReference = CE9146EC26682FB900718C46 /* infraestructura.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CE9146F426682FB900718C46 /* infraestructuraTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE91470326682FB900718C46 /* Build configuration list for PBXNativeTarget "infraestructuraTests" */;
-			buildPhases = (
-				CE9146F126682FB900718C46 /* Sources */,
-				CE9146F226682FB900718C46 /* Frameworks */,
-				CE9146F326682FB900718C46 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE9146F826682FB900718C46 /* PBXTargetDependency */,
-			);
-			name = infraestructuraTests;
-			productName = infraestructureTests;
-			productReference = CE9146F526682FB900718C46 /* infraestructuraTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -254,9 +215,6 @@
 					CE9146EB26682FB900718C46 = {
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
-					};
-					CE9146F426682FB900718C46 = {
-						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -277,20 +235,12 @@
 			projectRoot = "";
 			targets = (
 				CE9146EB26682FB900718C46 /* infraestructura */,
-				CE9146F426682FB900718C46 /* infraestructuraTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CE9146EA26682FB900718C46 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE9146F326682FB900718C46 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,22 +266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE9146F126682FB900718C46 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE9146F826682FB900718C46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE9146EB26682FB900718C46 /* infraestructura */;
-			targetProxy = CE9146F726682FB900718C46 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CE9146FE26682FB900718C46 /* Debug */ = {
@@ -507,44 +442,6 @@
 			};
 			name = Release;
 		};
-		CE91470426682FB900718C46 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q8W2BLFM54;
-				INFOPLIST_FILE = infraestructureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.infraestructureTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CE91470526682FB900718C46 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q8W2BLFM54;
-				INFOPLIST_FILE = infraestructureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.infraestructureTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -562,15 +459,6 @@
 			buildConfigurations = (
 				CE91470126682FB900718C46 /* Debug */,
 				CE91470226682FB900718C46 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE91470326682FB900718C46 /* Build configuration list for PBXNativeTarget "infraestructuraTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE91470426682FB900718C46 /* Debug */,
-				CE91470526682FB900718C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import dominio
 
 class RegistroTests: XCTestCase {
 //    testCreacionCarro_PlacaCorrecta_CreacionCorrecta

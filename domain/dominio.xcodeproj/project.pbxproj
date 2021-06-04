@@ -107,9 +107,9 @@
 		CE9146D526682F9D00718C46 /* dominioTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEA078F32669BE0F00632678 /* Factura */,
-				CEA078F22669BE0700632678 /* Registro */,
-				CEA078F12669BE0000632678 /* Vehiculo */,
+				CEA078F32669BE0F00632678 /* factura */,
+				CEA078F22669BE0700632678 /* registro */,
+				CEA078F12669BE0000632678 /* vehiculo */,
 				CE9146D826682F9D00718C46 /* Info.plist */,
 			);
 			path = dominioTests;
@@ -202,28 +202,28 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		CEA078F12669BE0000632678 /* Vehiculo */ = {
+		CEA078F12669BE0000632678 /* vehiculo */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078F42669BE5400632678 /* VehiculoTests.swift */,
 			);
-			path = Vehiculo;
+			path = vehiculo;
 			sourceTree = "<group>";
 		};
-		CEA078F22669BE0700632678 /* Registro */ = {
+		CEA078F22669BE0700632678 /* registro */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078F62669BE6400632678 /* RegistroTests.swift */,
 			);
-			path = Registro;
+			path = registro;
 			sourceTree = "<group>";
 		};
-		CEA078F32669BE0F00632678 /* Factura */ = {
+		CEA078F32669BE0F00632678 /* factura */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078F82669BE7800632678 /* FacturaTests.swift */,
 			);
-			path = Factura;
+			path = factura;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,13 +548,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8W2BLFM54;
-				INFOPLIST_FILE = domainTests/Info.plist;
+				INFOPLIST_FILE = dominioTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.domainTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.dominioTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,13 +567,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8W2BLFM54;
-				INFOPLIST_FILE = domainTests/Info.plist;
+				INFOPLIST_FILE = dominioTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.domainTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.dominioTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
