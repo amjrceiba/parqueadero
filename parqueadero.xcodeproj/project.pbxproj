@@ -29,13 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE9146A226682F2400718C46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE91468826682F2200718C46 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE91468F26682F2200718C46;
-			remoteInfo = parqueadero;
-		};
 		CE9146AD26682F2400718C46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE91468826682F2200718C46 /* Project object */;
@@ -69,7 +62,6 @@
 		CE91469726682F2400718C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE91469A26682F2400718C46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE91469C26682F2400718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE9146A126682F2400718C46 /* parqueaderoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parqueaderoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146AC26682F2400718C46 /* parqueaderoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parqueaderoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146B026682F2400718C46 /* parqueaderoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueaderoUITests.swift; sourceTree = "<group>"; };
 		CE9146B226682F2400718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,13 +84,6 @@
 			files = (
 				CE0C93B1266A757F00367AF8 /* dominio.framework in Frameworks */,
 				CE0C93B4266A758200367AF8 /* infraestructura.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE91469E26682F2400718C46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				CE91469026682F2200718C46 /* parqueadero.app */,
-				CE9146A126682F2400718C46 /* parqueaderoTests.xctest */,
 				CE9146AC26682F2400718C46 /* parqueaderoUITests.xctest */,
 			);
 			name = Products;
@@ -321,24 +305,6 @@
 			productReference = CE91469026682F2200718C46 /* parqueadero.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE9146A026682F2400718C46 /* parqueaderoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE9146B826682F2400718C46 /* Build configuration list for PBXNativeTarget "parqueaderoTests" */;
-			buildPhases = (
-				CE91469D26682F2400718C46 /* Sources */,
-				CE91469E26682F2400718C46 /* Frameworks */,
-				CE91469F26682F2400718C46 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE9146A326682F2400718C46 /* PBXTargetDependency */,
-			);
-			name = parqueaderoTests;
-			productName = parqueaderoTests;
-			productReference = CE9146A126682F2400718C46 /* parqueaderoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		CE9146AB26682F2400718C46 /* parqueaderoUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9146BB26682F2400718C46 /* Build configuration list for PBXNativeTarget "parqueaderoUITests" */;
@@ -369,10 +335,6 @@
 					CE91468F26682F2200718C46 = {
 						CreatedOnToolsVersion = 12.5;
 					};
-					CE9146A026682F2400718C46 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = CE91468F26682F2200718C46;
-					};
 					CE9146AB26682F2400718C46 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = CE91468F26682F2200718C46;
@@ -393,7 +355,6 @@
 			projectRoot = "";
 			targets = (
 				CE91468F26682F2200718C46 /* parqueadero */,
-				CE9146A026682F2400718C46 /* parqueaderoTests */,
 				CE9146AB26682F2400718C46 /* parqueaderoUITests */,
 			);
 		};
@@ -406,13 +367,6 @@
 			files = (
 				CE91469B26682F2400718C46 /* Preview Assets.xcassets in Resources */,
 				CE91469826682F2400718C46 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE91469F26682F2400718C46 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,13 +399,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE91469D26682F2400718C46 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CE9146A826682F2400718C46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,11 +410,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE9146A326682F2400718C46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE91468F26682F2200718C46 /* parqueadero */;
-			targetProxy = CE9146A226682F2400718C46 /* PBXContainerItemProxy */;
-		};
 		CE9146AE26682F2400718C46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE91468F26682F2200718C46 /* parqueadero */;
@@ -636,50 +578,6 @@
 			};
 			name = Release;
 		};
-		CE9146B926682F2400718C46 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q8W2BLFM54;
-				INFOPLIST_FILE = parqueaderoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.parqueaderoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parqueadero.app/parqueadero";
-			};
-			name = Debug;
-		};
-		CE9146BA26682F2400718C46 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q8W2BLFM54;
-				INFOPLIST_FILE = parqueaderoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.parqueaderoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parqueadero.app/parqueadero";
-			};
-			name = Release;
-		};
 		CE9146BC26682F2400718C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -737,15 +635,6 @@
 			buildConfigurations = (
 				CE9146B626682F2400718C46 /* Debug */,
 				CE9146B726682F2400718C46 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE9146B826682F2400718C46 /* Build configuration list for PBXNativeTarget "parqueaderoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE9146B926682F2400718C46 /* Debug */,
-				CE9146BA26682F2400718C46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
