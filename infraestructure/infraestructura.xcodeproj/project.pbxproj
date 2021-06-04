@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		CE1456A92669DFA600C25E82 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CE1456A82669DFA600C25E82 /* Realm */; };
 		CE1456AB2669DFA600C25E82 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE1456AA2669DFA600C25E82 /* RealmSwift */; };
-		CE7F2C712669EAD6009447F6 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C702669EAD6009447F6 /* dominio.framework */; };
-		CE7F2C722669EAD6009447F6 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C702669EAD6009447F6 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE7F2C922669F181009447F6 /* dominio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C912669F181009447F6 /* dominio.framework */; };
+		CE7F2C932669F181009447F6 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F2C912669F181009447F6 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE9146F626682FB900718C46 /* infraestructura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9146EC26682FB900718C46 /* infraestructura.framework */; };
 		CE9146FD26682FB900718C46 /* infraestructura.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9146EF26682FB900718C46 /* infraestructura.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE91473826683ED900718C46 /* CarroEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91473726683ED900718C46 /* CarroEntity.swift */; };
@@ -41,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE7F2C722669EAD6009447F6 /* dominio.framework in Embed Frameworks */,
+				CE7F2C932669F181009447F6 /* dominio.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE7F2C702669EAD6009447F6 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7F2C912669F181009447F6 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146EC26682FB900718C46 /* infraestructura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = infraestructura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9146EF26682FB900718C46 /* infraestructura.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infraestructura.h; sourceTree = "<group>"; };
 		CE9146F026682FB900718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1456AB2669DFA600C25E82 /* RealmSwift in Frameworks */,
-				CE7F2C712669EAD6009447F6 /* dominio.framework in Frameworks */,
+				CE7F2C922669F181009447F6 /* dominio.framework in Frameworks */,
 				CE1456A92669DFA600C25E82 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,10 +87,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE7F2C6F2669EAD6009447F6 /* Frameworks */ = {
+		CE7F2C902669F181009447F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE7F2C702669EAD6009447F6 /* dominio.framework */,
+				CE7F2C912669F181009447F6 /* dominio.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 			children = (
 				CE9146EE26682FB900718C46 /* infraestructura */,
 				CE9146ED26682FB900718C46 /* Products */,
-				CE7F2C6F2669EAD6009447F6 /* Frameworks */,
+				CE7F2C902669F181009447F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
