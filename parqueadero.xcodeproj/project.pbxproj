@@ -11,6 +11,7 @@
 		CE0C93B2266A757F00367AF8 /* dominio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C93B0266A757F00367AF8 /* dominio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE0C93B4266A758200367AF8 /* infraestructura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C93B3266A758200367AF8 /* infraestructura.framework */; };
 		CE0C93B5266A758200367AF8 /* infraestructura.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE0C93B3266A758200367AF8 /* infraestructura.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE0C93B8266A85C600367AF8 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C93B7266A85C600367AF8 /* ServiceFactory.swift */; };
 		CE91469426682F2200718C46 /* parqueaderoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91469326682F2200718C46 /* parqueaderoApp.swift */; };
 		CE91469626682F2200718C46 /* ParqueaderoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91469526682F2200718C46 /* ParqueaderoView.swift */; };
 		CE91469826682F2400718C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE91469726682F2400718C46 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		CE0C93B0266A757F00367AF8 /* dominio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = dominio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C93B3266A758200367AF8 /* infraestructura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = infraestructura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C93B7266A85C600367AF8 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		CE91469026682F2200718C46 /* parqueadero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parqueadero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91469326682F2200718C46 /* parqueaderoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueaderoApp.swift; sourceTree = "<group>"; };
 		CE91469526682F2200718C46 /* ParqueaderoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParqueaderoView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE0C93B6266A82E700367AF8 /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C93B7266A85C600367AF8 /* ServiceFactory.swift */,
+			);
+			path = factory;
+			sourceTree = "<group>";
+		};
 		CE91468726682F2200718C46 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		CE91469226682F2200718C46 /* parqueadero */ = {
 			isa = PBXGroup;
 			children = (
+				CE0C93B6266A82E700367AF8 /* factory */,
 				CEA078E72669B13E00632678 /* registro */,
 				CEA078E62669B12F00632678 /* vehiculo */,
 				CEA078E52669B12000632678 /* parqueadero */,
@@ -389,6 +400,7 @@
 				CEA078DE26697EBD00632678 /* BoldTextView.swift in Sources */,
 				CE91477C26687EF500718C46 /* RegistroItemView.swift in Sources */,
 				CE91478C266884CD00718C46 /* RegistroView.swift in Sources */,
+				CE0C93B8266A85C600367AF8 /* ServiceFactory.swift in Sources */,
 				CEA078E42669AC1D00632678 /* ParqueaderoViewModel.swift in Sources */,
 				CE91475E266852B200718C46 /* AddVehiculoViewModel.swift in Sources */,
 				CE91478E266884F500718C46 /* CustomStackView.swift in Sources */,

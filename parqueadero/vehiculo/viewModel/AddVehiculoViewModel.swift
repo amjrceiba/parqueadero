@@ -10,6 +10,9 @@ import dominio
 import infraestructura
 
 class AddVehiculoViewModel: ObservableObject {
+    
+    private let tipoRepositorio = "REPOSITORIO_REALM"
+    
     @Published var showAlert = false
     @Published var errorMessage = ""
     
@@ -19,8 +22,9 @@ class AddVehiculoViewModel: ObservableObject {
             let vehiculo = try crearVehiculo(matricula: matricula.lowercased(), tipoVehiculo: tipoVehiculo, cilindraje)
             
             let registro = try Registro(id: UUID().uuidString,fechaIngreso: date, vehiculo: vehiculo, vehiculosActuales: obtenerCapacidad(tipoVehiculo: tipoVehiculo))
-            let registroService = RegistroService(registroRepository: RegistroRepositoryRealm())
-            try registroService.guardarRegistro(registro: registro)
+            
+            let repositorio = ServiceFactory().obtenerRepository(tipoRepositorio: tipoRepositorio)
+            try repositorio?.registrar(registro: registro)
             
             completion()
         }
