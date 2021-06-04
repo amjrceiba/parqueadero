@@ -5,9 +5,9 @@
       location = "container:parqueadero.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/andres.jaramillo/Ceiba/Ios/parqueadero/infraestructure/infraestructura.xcodeproj">
+      location = "group:infraestructura/infraestructura.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/andres.jaramillo/Ceiba/Ios/parqueadero/domain/dominio.xcodeproj">
+      location = "group:dominio/dominio.xcodeproj">
    </FileRef>
 </Workspace>
