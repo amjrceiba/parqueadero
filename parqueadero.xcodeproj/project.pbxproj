@@ -181,27 +181,27 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		CE91475826684B4E00718C46 /* UtilUI */ = {
+		CE91475826684B4E00718C46 /* utilUI */ = {
 			isa = PBXGroup;
 			children = (
 				CE91479326689DFC00718C46 /* TextLimiter.swift */,
 			);
-			path = UtilUI;
+			path = utilUI;
 			sourceTree = "<group>";
 		};
-		CE91477D26687F2800718C46 /* Extensions */ = {
+		CE91477D26687F2800718C46 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CE91477E26687F3900718C46 /* DateToStringExtension.swift */,
 			);
-			path = Extensions;
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		CEA078E52669B12000632678 /* parqueadero */ = {
 			isa = PBXGroup;
 			children = (
-				CEA078EE2669B2B900632678 /* ViewModel */,
-				CEA078EA2669B1B500632678 /* View */,
+				CEA078EE2669B2B900632678 /* viewModel */,
+				CEA078EA2669B1B500632678 /* view */,
 			);
 			path = parqueadero;
 			sourceTree = "<group>";
@@ -209,8 +209,8 @@
 		CEA078E62669B12F00632678 /* vehiculo */ = {
 			isa = PBXGroup;
 			children = (
-				CEA078EF2669B2C300632678 /* ViewModel */,
-				CEA078E92669B1AB00632678 /* View */,
+				CEA078EF2669B2C300632678 /* viewModel */,
+				CEA078E92669B1AB00632678 /* view */,
 			);
 			path = vehiculo;
 			sourceTree = "<group>";
@@ -218,35 +218,35 @@
 		CEA078E72669B13E00632678 /* registro */ = {
 			isa = PBXGroup;
 			children = (
-				CEA078F02669B2CB00632678 /* ViewModel */,
-				CEA078E82669B1A200632678 /* View */,
+				CEA078F02669B2CB00632678 /* viewModel */,
+				CEA078E82669B1A200632678 /* view */,
 			);
 			path = registro;
 			sourceTree = "<group>";
 		};
-		CEA078E82669B1A200632678 /* View */ = {
+		CEA078E82669B1A200632678 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				CE91478B266884CD00718C46 /* RegistroView.swift */,
 			);
-			path = View;
+			path = view;
 			sourceTree = "<group>";
 		};
-		CEA078E92669B1AB00632678 /* View */ = {
+		CEA078E92669B1AB00632678 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				CE91475B26684BBD00718C46 /* AddVehiculoView.swift */,
 			);
-			path = View;
+			path = view;
 			sourceTree = "<group>";
 		};
-		CEA078EA2669B1B500632678 /* View */ = {
+		CEA078EA2669B1B500632678 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078EB2669B1E000632678 /* ListItem */,
 				CE91469526682F2200718C46 /* ParqueaderoView.swift */,
 			);
-			path = View;
+			path = view;
 			sourceTree = "<group>";
 		};
 		CEA078EB2669B1E000632678 /* ListItem */ = {
@@ -260,44 +260,44 @@
 		CEA078EC2669B20800632678 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				CE91477D26687F2800718C46 /* Extensions */,
-				CE91475826684B4E00718C46 /* UtilUI */,
-				CEA078ED2669B22500632678 /* View */,
+				CE91477D26687F2800718C46 /* extensions */,
+				CE91475826684B4E00718C46 /* utilUI */,
+				CEA078ED2669B22500632678 /* view */,
 			);
 			path = common;
 			sourceTree = "<group>";
 		};
-		CEA078ED2669B22500632678 /* View */ = {
+		CEA078ED2669B22500632678 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				CE91478D266884F500718C46 /* CustomStackView.swift */,
 				CEA078DD26697EBD00632678 /* BoldTextView.swift */,
 			);
-			path = View;
+			path = view;
 			sourceTree = "<group>";
 		};
-		CEA078EE2669B2B900632678 /* ViewModel */ = {
+		CEA078EE2669B2B900632678 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
 				CEA078E32669AC1D00632678 /* ParqueaderoViewModel.swift */,
 			);
-			path = ViewModel;
+			path = viewModel;
 			sourceTree = "<group>";
 		};
-		CEA078EF2669B2C300632678 /* ViewModel */ = {
+		CEA078EF2669B2C300632678 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
 				CE91475D266852B200718C46 /* AddVehiculoViewModel.swift */,
 			);
-			path = ViewModel;
+			path = viewModel;
 			sourceTree = "<group>";
 		};
-		CEA078F02669B2CB00632678 /* ViewModel */ = {
+		CEA078F02669B2CB00632678 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
 				CE91478F2668852E00718C46 /* RegistroViewModel.swift */,
 			);
-			path = ViewModel;
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
