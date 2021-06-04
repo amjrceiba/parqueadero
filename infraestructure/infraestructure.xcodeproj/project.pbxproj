@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE9146F626682FB900718C46 /* infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9146EC26682FB900718C46 /* infraestructure.framework */; };
-		CE9146FB26682FB900718C46 /* infraestructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9146FA26682FB900718C46 /* infraestructureTests.swift */; };
 		CE9146FD26682FB900718C46 /* infraestructure.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9146EF26682FB900718C46 /* infraestructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE91473226683E8200718C46 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CE91473126683E8200718C46 /* Realm */; };
 		CE91473426683E8200718C46 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE91473326683E8200718C46 /* RealmSwift */; };
@@ -54,8 +53,6 @@
 		CE9146EF26682FB900718C46 /* infraestructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infraestructure.h; sourceTree = "<group>"; };
 		CE9146F026682FB900718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9146F526682FB900718C46 /* infraestructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infraestructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9146FA26682FB900718C46 /* infraestructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infraestructureTests.swift; sourceTree = "<group>"; };
-		CE9146FC26682FB900718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE91473726683ED900718C46 /* CarroEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarroEntity.swift; sourceTree = "<group>"; };
 		CE91473926683EF600718C46 /* MotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoEntity.swift; sourceTree = "<group>"; };
 		CE91473C26683FA700718C46 /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				CE9146EE26682FB900718C46 /* infraestructure */,
-				CE9146F926682FB900718C46 /* infraestructureTests */,
 				CE9146ED26682FB900718C46 /* Products */,
 				CE91473B26683FA700718C46 /* Frameworks */,
 			);
@@ -120,22 +116,11 @@
 			path = infraestructure;
 			sourceTree = "<group>";
 		};
-		CE9146F926682FB900718C46 /* infraestructureTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE9146FA26682FB900718C46 /* infraestructureTests.swift */,
-				CE9146FC26682FB900718C46 /* Info.plist */,
-			);
-			path = infraestructureTests;
-			sourceTree = "<group>";
-		};
 		CE91472626683D2F00718C46 /* Vehiculo */ = {
 			isa = PBXGroup;
 			children = (
-				CE91472B26683D6F00718C46 /* Enums */,
 				CE91472A26683D5600718C46 /* Anticorruption */,
 				CE91472926683D5000718C46 /* Entity */,
-				CE91472826683D4600718C46 /* Repository */,
 			);
 			path = Vehiculo;
 			sourceTree = "<group>";
@@ -143,19 +128,11 @@
 		CE91472726683D3B00718C46 /* Registro */ = {
 			isa = PBXGroup;
 			children = (
-				CE91472F26683D9C00718C46 /* Enums */,
 				CE91472E26683D9300718C46 /* Anticorruption */,
 				CE91472D26683D8D00718C46 /* Entity */,
 				CE91472C26683D8700718C46 /* Repository */,
 			);
 			path = Registro;
-			sourceTree = "<group>";
-		};
-		CE91472826683D4600718C46 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		CE91472926683D5000718C46 /* Entity */ = {
@@ -174,13 +151,6 @@
 				CE91476326685D9A00718C46 /* MotoTraslator.swift */,
 			);
 			path = Anticorruption;
-			sourceTree = "<group>";
-		};
-		CE91472B26683D6F00718C46 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		CE91472C26683D8700718C46 /* Repository */ = {
@@ -207,13 +177,6 @@
 				CE914767266860AC00718C46 /* RegistroCarroTraslator.swift */,
 			);
 			path = Anticorruption;
-			sourceTree = "<group>";
-		};
-		CE91472F26683D9C00718C46 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		CE91473B26683FA700718C46 /* Frameworks */ = {
@@ -357,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9146FB26682FB900718C46 /* infraestructureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

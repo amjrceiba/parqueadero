@@ -7,13 +7,7 @@
 
 import Foundation
 
-public class Const {
-    public static let horaCarro = 1000
-    public static let horaMoto = 500
-    public static let diaCarro = 8000
-    public static let diaMoto = 4000
-    public static let adicional = 2000
-    
-    public static let limiteCarros = 2
+public class Const {    
+    public static let limiteCarros = 20
     public static let limiteMotos = 10
 }

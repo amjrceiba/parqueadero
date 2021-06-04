@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE9146D226682F9D00718C46 /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9146C826682F9D00718C46 /* domain.framework */; };
-		CE9146D726682F9D00718C46 /* domainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9146D626682F9D00718C46 /* domainTests.swift */; };
 		CE9146D926682F9D00718C46 /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9146CB26682F9D00718C46 /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE9147102668306F00718C46 /* ErroresVehiculoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91470F2668306F00718C46 /* ErroresVehiculoEnum.swift */; };
 		CE9147142668307800718C46 /* Vehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147112668307800718C46 /* Vehiculo.swift */; };
@@ -16,12 +15,14 @@
 		CE9147162668307800718C46 /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147132668307800718C46 /* Moto.swift */; };
 		CE91471D266834A800718C46 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91471C266834A800718C46 /* Registro.swift */; };
 		CE91471F266834F600718C46 /* ErroresRegistroEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91471E266834F600718C46 /* ErroresRegistroEnum.swift */; };
-		CE9147212668376A00718C46 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147202668376A00718C46 /* Util.swift */; };
 		CE91472326683A3400718C46 /* RegistroRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91472226683A3400718C46 /* RegistroRepository.swift */; };
 		CE91472526683A4D00718C46 /* RegistroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91472426683A4D00718C46 /* RegistroService.swift */; };
 		CE9147882668812000718C46 /* Factura.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147872668812000718C46 /* Factura.swift */; };
 		CE91478A2668815000718C46 /* TotalFactura.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9147892668815000718C46 /* TotalFactura.swift */; };
 		CE914792266885AA00718C46 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE914791266885AA00718C46 /* Const.swift */; };
+		CEA078F52669BE5400632678 /* VehiculoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA078F42669BE5400632678 /* VehiculoTests.swift */; };
+		CEA078F72669BE6400632678 /* RegistroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA078F62669BE6400632678 /* RegistroTests.swift */; };
+		CEA078F92669BE7800632678 /* FacturaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA078F82669BE7800632678 /* FacturaTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		CE9146CB26682F9D00718C46 /* domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = domain.h; sourceTree = "<group>"; };
 		CE9146CC26682F9D00718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9146D126682F9D00718C46 /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9146D626682F9D00718C46 /* domainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = domainTests.swift; sourceTree = "<group>"; };
 		CE9146D826682F9D00718C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE91470F2668306F00718C46 /* ErroresVehiculoEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErroresVehiculoEnum.swift; sourceTree = "<group>"; };
 		CE9147112668307800718C46 /* Vehiculo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehiculo.swift; sourceTree = "<group>"; };
@@ -47,12 +47,14 @@
 		CE9147132668307800718C46 /* Moto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
 		CE91471C266834A800718C46 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
 		CE91471E266834F600718C46 /* ErroresRegistroEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErroresRegistroEnum.swift; sourceTree = "<group>"; };
-		CE9147202668376A00718C46 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		CE91472226683A3400718C46 /* RegistroRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistroRepository.swift; path = domain/Registro/repository/RegistroRepository.swift; sourceTree = SOURCE_ROOT; };
 		CE91472426683A4D00718C46 /* RegistroService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroService.swift; sourceTree = "<group>"; };
 		CE9147872668812000718C46 /* Factura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factura.swift; sourceTree = "<group>"; };
 		CE9147892668815000718C46 /* TotalFactura.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalFactura.swift; sourceTree = "<group>"; };
 		CE914791266885AA00718C46 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		CEA078F42669BE5400632678 /* VehiculoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculoTests.swift; sourceTree = "<group>"; };
+		CEA078F62669BE6400632678 /* RegistroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroTests.swift; sourceTree = "<group>"; };
+		CEA078F82669BE7800632678 /* FacturaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacturaTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 				CE9146CB26682F9D00718C46 /* domain.h */,
 				CE9146CC26682F9D00718C46 /* Info.plist */,
 				CE914791266885AA00718C46 /* Const.swift */,
-				CE9147202668376A00718C46 /* Util.swift */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -109,7 +110,9 @@
 		CE9146D526682F9D00718C46 /* domainTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE9146D626682F9D00718C46 /* domainTests.swift */,
+				CEA078F32669BE0F00632678 /* Factura */,
+				CEA078F22669BE0700632678 /* Registro */,
+				CEA078F12669BE0000632678 /* Vehiculo */,
 				CE9146D826682F9D00718C46 /* Info.plist */,
 			);
 			path = domainTests;
@@ -118,128 +121,112 @@
 		CE91470A2668300E00718C46 /* Vehiculo */ = {
 			isa = PBXGroup;
 			children = (
-				CE91470E2668303400718C46 /* service */,
-				CE91470D2668302F00718C46 /* repository */,
-				CE91470C2668302900718C46 /* model */,
-				CE91470B2668301E00718C46 /* enums */,
+				CE91470C2668302900718C46 /* Model */,
+				CE91470B2668301E00718C46 /* Errors */,
 			);
 			path = Vehiculo;
 			sourceTree = "<group>";
 		};
-		CE91470B2668301E00718C46 /* enums */ = {
+		CE91470B2668301E00718C46 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
 				CE91470F2668306F00718C46 /* ErroresVehiculoEnum.swift */,
 			);
-			path = enums;
+			path = Errors;
 			sourceTree = "<group>";
 		};
-		CE91470C2668302900718C46 /* model */ = {
+		CE91470C2668302900718C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CE9147122668307800718C46 /* Carro.swift */,
 				CE9147132668307800718C46 /* Moto.swift */,
 				CE9147112668307800718C46 /* Vehiculo.swift */,
 			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		CE91470D2668302F00718C46 /* repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = repository;
-			sourceTree = "<group>";
-		};
-		CE91470E2668303400718C46 /* service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = service;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CE9147172668344000718C46 /* Registro */ = {
 			isa = PBXGroup;
 			children = (
-				CE91471B2668346200718C46 /* service */,
-				CE91471A2668345800718C46 /* repository */,
-				CE9147192668345200718C46 /* model */,
-				CE9147182668344C00718C46 /* enums */,
+				CE91471B2668346200718C46 /* Service */,
+				CE91471A2668345800718C46 /* Repository */,
+				CE9147192668345200718C46 /* Model */,
+				CE9147182668344C00718C46 /* Errors */,
 			);
 			path = Registro;
 			sourceTree = "<group>";
 		};
-		CE9147182668344C00718C46 /* enums */ = {
+		CE9147182668344C00718C46 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
 				CE91471E266834F600718C46 /* ErroresRegistroEnum.swift */,
 			);
-			path = enums;
+			path = Errors;
 			sourceTree = "<group>";
 		};
-		CE9147192668345200718C46 /* model */ = {
+		CE9147192668345200718C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CE91471C266834A800718C46 /* Registro.swift */,
 			);
-			path = model;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		CE91471A2668345800718C46 /* repository */ = {
+		CE91471A2668345800718C46 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				CE91472226683A3400718C46 /* RegistroRepository.swift */,
 			);
-			path = repository;
+			path = Repository;
 			sourceTree = "<group>";
 		};
-		CE91471B2668346200718C46 /* service */ = {
+		CE91471B2668346200718C46 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				CE91472426683A4D00718C46 /* RegistroService.swift */,
 			);
-			path = service;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		CE914780266880CE00718C46 /* Factura */ = {
 			isa = PBXGroup;
 			children = (
-				CE9147862668810F00718C46 /* service */,
-				CE9147852668810900718C46 /* repository */,
-				CE9147842668810300718C46 /* model */,
-				CE914783266880FA00718C46 /* enums */,
+				CE9147842668810300718C46 /* Model */,
 			);
 			path = Factura;
 			sourceTree = "<group>";
 		};
-		CE914783266880FA00718C46 /* enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = enums;
-			sourceTree = "<group>";
-		};
-		CE9147842668810300718C46 /* model */ = {
+		CE9147842668810300718C46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CE9147892668815000718C46 /* TotalFactura.swift */,
 				CE9147872668812000718C46 /* Factura.swift */,
 			);
-			path = model;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		CE9147852668810900718C46 /* repository */ = {
+		CEA078F12669BE0000632678 /* Vehiculo */ = {
 			isa = PBXGroup;
 			children = (
+				CEA078F42669BE5400632678 /* VehiculoTests.swift */,
 			);
-			path = repository;
+			path = Vehiculo;
 			sourceTree = "<group>";
 		};
-		CE9147862668810F00718C46 /* service */ = {
+		CEA078F22669BE0700632678 /* Registro */ = {
 			isa = PBXGroup;
 			children = (
+				CEA078F62669BE6400632678 /* RegistroTests.swift */,
 			);
-			path = service;
+			path = Registro;
+			sourceTree = "<group>";
+		};
+		CEA078F32669BE0F00632678 /* Factura */ = {
+			isa = PBXGroup;
+			children = (
+				CEA078F82669BE7800632678 /* FacturaTests.swift */,
+			);
+			path = Factura;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,7 +346,6 @@
 				CE914792266885AA00718C46 /* Const.swift in Sources */,
 				CE9147142668307800718C46 /* Vehiculo.swift in Sources */,
 				CE9147152668307800718C46 /* Carro.swift in Sources */,
-				CE9147212668376A00718C46 /* Util.swift in Sources */,
 				CE91471F266834F600718C46 /* ErroresRegistroEnum.swift in Sources */,
 				CE91478A2668815000718C46 /* TotalFactura.swift in Sources */,
 				CE9147102668306F00718C46 /* ErroresVehiculoEnum.swift in Sources */,
@@ -370,7 +356,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9146D726682F9D00718C46 /* domainTests.swift in Sources */,
+				CEA078F72669BE6400632678 /* RegistroTests.swift in Sources */,
+				CEA078F52669BE5400632678 /* VehiculoTests.swift in Sources */,
+				CEA078F92669BE7800632678 /* FacturaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,7 @@ import RealmSwift
 class RegistroCarroTraslator {
     func domainToEntity(registro: Registro)->RegistroCarroEntity{
         let registroEntity = RegistroCarroEntity()
-        registroEntity.id = registro.getId()
+        registroEntity.id = registro._id
         registroEntity.fechaIngreso = registro.getFechaIngreso()
         registroEntity.vehiculo = CarroTraslator().domainToEntity(carro: registro.getVehiculo() as! Carro)
         

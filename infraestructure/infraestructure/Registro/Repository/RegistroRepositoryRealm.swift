@@ -16,19 +16,19 @@ public class RegistroRepositoryRealm: RegistroRepository {
     public func registrar(registro: Registro) throws {
         let realm = try! Realm()
         
-        
+        //solo logica de persistencia...
         if registro.getVehiculo() is Moto{
             
-            let registrosMotos = RegistroMotoTraslator().getObjects(registrosMotosEntities: realm.objects(RegistroMotoEntity.self))
-            try registro.validarAgregar(count: registrosMotos.count, limite: Const.limiteMotos)
+            //let registrosMotos = RegistroMotoTraslator().getObjects(registrosMotosEntities: realm.objects(RegistroMotoEntity.self))
+            //try registro.validarAgregar(vehiculosActuales: registrosMotos.count, limiteVehiculos: Const.limiteMotos)
             
             try! realm.write {
                 realm.add(RegistroMotoTraslator().domainToEntity(registro: registro))
             }
         }
         else{
-            let registrosCarros = RegistroCarroTraslator().getObjects(registrosCarrosEntities: realm.objects(RegistroCarroEntity.self))
-            try registro.validarAgregar(count: registrosCarros.count, limite: Const.limiteCarros)
+            //let registrosCarros = RegistroCarroTraslator().getObjects(registrosCarrosEntities: realm.objects(RegistroCarroEntity.self))
+            //try registro.validarAgregar(vehiculosActuales: registrosCarros.count, limiteVehiculos: Const.limiteCarros)
             
             try! realm.write {
                 realm.add(RegistroCarroTraslator().domainToEntity(registro: registro))
